@@ -53,6 +53,7 @@ PLATFORMS = {
 
 
 class GzParamGenerator(ParamGenerator):
+
     def generate_sensors(self) -> None:
         for sensor in self.clearpath_config.sensors.get_all_sensors():
             sensor_param = SensorParam(
