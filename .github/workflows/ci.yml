@@ -36,5 +36,5 @@ jobs:
           package-name: |
             clearpath_generator_gz
             clearpath_gz
-            ckearpath_simulator
+            clearpath_simulator
           vcs-repo-file-url: dependencies.repos
