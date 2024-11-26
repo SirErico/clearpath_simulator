@@ -2,8 +2,8 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2024-11-25)
+------------------
 * Added minimum version.
 * Play sim automatically (`#52 <https://github.com/clearpathrobotics/clearpath_simulator/issues/52>`_)
   * Play sim automatically
