@@ -51,7 +51,7 @@
     </spherical_coordinates>
 
     <model name='pipeline'>
-      <pose>0 -10 -1 0 0 0</pose>
+      <pose>0 20 -1 0 0 3.14159</pose>
       <static>true</static>
       <link name='pipeline'>
         <collision name='pipeline_collision'>
@@ -78,7 +78,7 @@
     </model>
 
     <model name='water_level'>
-      <pose>0 -10 -1 0 0 0</pose>
+      <pose>0 20 -1 0 0 3.14159</pose>
       <static>true</static>
       <link name='water_level'>
         <!-- no collision -->
@@ -96,7 +96,7 @@
     </model>
 
     <model name='base_station'>
-      <pose>0 5 0 0 0 0</pose>
+      <pose>0 8 0 0 0 0</pose>
       <static>true</static>
       <link name='base_station'>
         <collision name='base_station_collision'>
