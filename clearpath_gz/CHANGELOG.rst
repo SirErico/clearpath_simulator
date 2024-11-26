@@ -2,6 +2,14 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added minimum version.
+* Play sim automatically (`#52 <https://github.com/clearpathrobotics/clearpath_simulator/issues/52>`_)
+  * Play sim automatically
+  * Accept auto_start as a launch configuration to support previous behavior although default is true
+* Contributors: Hilary Luo, Tony Baltovski
+
 0.3.0 (2024-09-19)
 ------------------
 * Added manipulators to generator and spawn
