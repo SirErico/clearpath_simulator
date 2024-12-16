@@ -149,62 +149,49 @@ class GzLaunchGenerator(LaunchGenerator):
           }]
         )
 
+        # Common components for all platforms
+        self.common_platform_components = [
+            self.cmd_vel_node,
+            self.odom_base_node
+        ]
+
         # Components required for each platform
         self.platform_components = {
-            Platform.J100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.J100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
                 self.gps_0_bridge_node,
             ],
-            Platform.A200: [
-                self.cmd_vel_node,
-                self.odom_base_node,
-            ],
-            Platform.DD100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.A200: self.common_platform_components,
+            Platform.A300: self.common_platform_components,
+            Platform.DD100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.DD150: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.DD150:  self.common_platform_components + [
+                self.imu_0_bidge_node,
+                self.imu_filter_arg,
+                self.imu_filter_node,
+            ],
+            Platform.DO100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.DO100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.DO150: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.DO150: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.GENERIC: self.common_platform_components,
+            Platform.R100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.GENERIC: [
-                self.cmd_vel_node,
-                self.odom_base_node,
-            ],
-            Platform.R100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
-                self.imu_0_bridge_node,
-                self.imu_filter_arg,
-                self.imu_filter_node,
-            ],
-            Platform.W200: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.W200: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
