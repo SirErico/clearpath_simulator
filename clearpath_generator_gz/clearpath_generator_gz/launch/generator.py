@@ -171,7 +171,7 @@ class GzLaunchGenerator(LaunchGenerator):
                 self.imu_filter_node,
             ],
             Platform.DD150:  self.common_platform_components + [
-                self.imu_0_bidge_node,
+                self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
