@@ -46,17 +46,6 @@ def gz_launch(context, *args, **kwargs):
     pkg_ros_gz_sim = get_package_share_directory(
         'ros_gz_sim')
 
-    # Determine all ros packages that are sourced
-    packages_paths = [os.path.join(p, 'share') for p in os.getenv('AMENT_PREFIX_PATH').split(':')]
-
-    # Set gazebo resource path to include all sourced ros packages
-    gz_sim_resource_path = SetEnvironmentVariable(
-        name='GZ_SIM_RESOURCE_PATH',
-        value=[
-            os.path.join(pkg_clearpath_gz, 'worlds') + ':',
-            os.path.join(pkg_clearpath_gz, 'meshes') + ':',
-            ':'.join(packages_paths)])
-    
     # Paths
     gz_sim_launch = PathJoinSubstitution(
         [pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py'])
@@ -96,9 +85,10 @@ def generate_launch_description():
 
     # Set ignition resource path to include all sourced ros packages
     gz_sim_resource_path = SetEnvironmentVariable(
-        name='IGN_GAZEBO_RESOURCE_PATH',
+        name='GZ_SIM_RESOURCE_PATH',
         value=[
-            os.path.join(pkg_clearpath_gz, 'worlds'),
+            os.path.join(pkg_clearpath_gz, 'worlds') + ':',
+            os.path.join(pkg_clearpath_gz, 'meshes') + ':',
             ':' + ':'.join(packages_paths)])
 
     # Clock bridge
