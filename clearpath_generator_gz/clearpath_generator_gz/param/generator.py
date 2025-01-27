@@ -33,15 +33,16 @@
 # of Clearpath Robotics.
 
 from clearpath_config.common.types.platform import Platform
-from clearpath_config.sensors.types.imu import BaseIMU
 from clearpath_config.sensors.types.gps import Garmin18x
-from clearpath_generator_gz.param.sensors import SensorParam
+from clearpath_config.sensors.types.imu import BaseIMU
 from clearpath_generator_common.param.generator import ParamGenerator
 from clearpath_generator_common.param.manipulators import ManipulatorParam
 from clearpath_generator_common.param.platform import PlatformParam
+from clearpath_generator_gz.param.sensors import SensorParam
 
 PLATFORMS = {
     Platform.A200: {'imu': False, 'gps': False},
+    Platform.A300: {'imu': False, 'gps': False},
     Platform.J100: {'imu': True, 'gps': True},
     Platform.DD100: {'imu': True, 'gps': False},
     Platform.DD150: {'imu': True, 'gps': False},
@@ -53,6 +54,7 @@ PLATFORMS = {
 
 
 class GzParamGenerator(ParamGenerator):
+
     def generate_sensors(self) -> None:
         for sensor in self.clearpath_config.sensors.get_all_sensors():
             sensor_param = SensorParam(

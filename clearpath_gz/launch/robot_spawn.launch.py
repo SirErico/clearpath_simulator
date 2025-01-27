@@ -14,6 +14,8 @@
 #
 # @author Roni Kreinin (rkreinin@clearpathrobotics.com)
 
+import os
+
 from clearpath_config.clearpath_config import ClearpathConfig
 
 from launch import LaunchDescription
@@ -21,8 +23,8 @@ from launch.actions import (
     DeclareLaunchArgument,
     GroupAction,
     IncludeLaunchDescription,
+    OpaqueFunction,
     RegisterEventHandler,
-    OpaqueFunction
 )
 from launch.conditions import IfCondition
 from launch.event_handlers import OnProcessExit
@@ -35,8 +37,6 @@ from launch.substitutions import (
 
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-
-import os
 
 
 ARGUMENTS = [

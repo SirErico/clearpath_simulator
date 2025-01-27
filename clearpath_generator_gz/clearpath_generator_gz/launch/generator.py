@@ -31,22 +31,19 @@
 # Redistribution and use in source and binary forms, with or without
 # modification, is not permitted without the express permission
 # of Clearpath Robotics.
+import os
 
 from clearpath_config.common.types.platform import Platform
-
 from clearpath_generator_common.common import LaunchFile
-from clearpath_generator_common.launch.writer import LaunchWriter
 from clearpath_generator_common.launch.generator import LaunchGenerator
-
+from clearpath_generator_common.launch.writer import LaunchWriter
 from clearpath_generator_gz.launch.sensors import SensorLaunch
-
-import os
 
 
 class GzLaunchGenerator(LaunchGenerator):
-    GZ_TO_ROS_TWIST = '@geometry_msgs/msg/Twist[ignition.msgs.Twist'
-    ROS_TO_GZ_TWIST = '@geometry_msgs/msg/Twist]ignition.msgs.Twist'
-    GZ_TO_ROS_TF = '@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V'
+    GZ_TO_ROS_TWIST = '@geometry_msgs/msg/TwistStamped[gz.msgs.Twist'
+    ROS_TO_GZ_TWIST = '@geometry_msgs/msg/TwistStamped]gz.msgs.Twist'
+    GZ_TO_ROS_TF = '@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V'
 
     def __init__(self, setup_path: str = '/etc/clearpath/') -> None:
         super().__init__(setup_path)
@@ -73,7 +70,7 @@ class GzLaunchGenerator(LaunchGenerator):
         cmd_vel_robot_bridge_arg = '/model/' + self.robot_name + '/cmd_vel' + self.ROS_TO_GZ_TWIST
         cmd_vel_robot_bridge_remap = (
             '/model/' + self.robot_name + '/cmd_vel',
-            'platform/cmd_vel_unstamped'
+            'platform/cmd_vel'
           )
 
         self.cmd_vel_node = LaunchFile.Node(
@@ -152,62 +149,49 @@ class GzLaunchGenerator(LaunchGenerator):
           }]
         )
 
+        # Common components for all platforms
+        self.common_platform_components = [
+            self.cmd_vel_node,
+            self.odom_base_node
+        ]
+
         # Components required for each platform
         self.platform_components = {
-            Platform.J100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.J100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
                 self.gps_0_bridge_node,
             ],
-            Platform.A200: [
-                self.cmd_vel_node,
-                self.odom_base_node,
-            ],
-            Platform.DD100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.A200: self.common_platform_components,
+            Platform.A300: self.common_platform_components,
+            Platform.DD100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.DD150: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.DD150:  self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.DO100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.DO100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.DO150: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.DO150: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.GENERIC: [
-                self.cmd_vel_node,
-                self.odom_base_node,
-            ],
-            Platform.R100: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.GENERIC: self.common_platform_components,
+            Platform.R100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
             ],
-            Platform.W200: [
-                self.cmd_vel_node,
-                self.odom_base_node,
+            Platform.W200: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
                 self.imu_filter_node,
