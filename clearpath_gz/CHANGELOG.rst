@@ -2,6 +2,33 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Minor cleanup to remove unnecessary/relocated variables
+* Add GeoTif files, instructions for generating map tiles (`#60 <https://github.com/clearpathrobotics/clearpath_simulator/issues/60>`_)
+  * Add the geotif files & instructions for generating map tiles of the outdoor worlds. Add a column to the worlds table indicating the rough geographic region the world is tagged with
+  * Add the .gitignore file
+* Rotate the pipeline world so the solar panels face south. Adjust the pose of the ground so the robot's default spawn position is on flatter ground
+* Rotate the solar_farm world so the solar panels are correctly facing south
+* Increase the XY scaling of the pipeline world (`#58 <https://github.com/clearpathrobotics/clearpath_simulator/issues/58>`_)
+* Add more simulation environments (`#57 <https://github.com/clearpathrobotics/clearpath_simulator/issues/57>`_)
+  * Add the old cpr_inspection -> pipeline, cpr_agriculture -> solar_farm worlds
+  * Add the office & office_construction -> construction worlds
+  * Fix the path to the solar_farm models
+  * Add the orchard world
+  * Fix the world names for the office & construction worlds
+  * Add Dave N as an author, since he created the meshes used in the new worlds
+* Rename Gazbo libraries (`#55 <https://github.com/clearpathrobotics/clearpath_simulator/issues/55>`_)
+  * IGN_GAZEBO_RESOURCE_PATH -> GZ_SIM_RESOURCE_PATH
+  * More ignition -> gz fixes. Use stamped messages for cmd_vel
+  * Change the clock bridge to unidirectional instead of bidirectional
+* Fix import orders in clearpath_gz
+* Play sim automatically (`#52 <https://github.com/clearpathrobotics/clearpath_simulator/issues/52>`_)
+  * Play sim automatically
+  * Accept auto_start as a launch configuration to support previous behavior although default is true
+* Rename ign\_ -> gz\_ for gazebo dependencies
+* Contributors: Chris Iverach-Brereton, Hilary Luo
+
 0.3.0 (2024-09-19)
 ------------------
 * Added manipulators to generator and spawn
