@@ -2,8 +2,8 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2025-01-30)
+------------------
 * Minor cleanup to remove unnecessary/relocated variables
 * Add GeoTif files, instructions for generating map tiles (`#60 <https://github.com/clearpathrobotics/clearpath_simulator/issues/60>`_)
   * Add the geotif files & instructions for generating map tiles of the outdoor worlds. Add a column to the worlds table indicating the rough geographic region the world is tagged with

@@ -2,8 +2,8 @@
 Changelog for package clearpath_generator_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2025-01-30)
+------------------
 * Fix typo in IMU bridge node
 * Non-functional linting issues resulting in CI failures (`#67 <https://github.com/clearpathrobotics/clearpath_simulator/issues/67>`_)
 * Add A300 to supported platforms (`#63 <https://github.com/clearpathrobotics/clearpath_simulator/issues/63>`_)
