@@ -2,6 +2,12 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Forward port: Add argument to disable generation  (`#75 <https://github.com/clearpathrobotics/clearpath_simulator/issues/75>`_)
+  * Add argument to disable generation (`#74 <https://github.com/clearpathrobotics/clearpath_simulator/issues/74>`_)
+* Contributors: luis-camero
+
 2.0.0 (2025-01-30)
 ------------------
 * Minor cleanup to remove unnecessary/relocated variables
