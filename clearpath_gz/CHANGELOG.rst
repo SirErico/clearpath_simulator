@@ -2,6 +2,13 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix: Generation disable (`#76 <https://github.com/clearpathrobotics/clearpath_simulator/issues/76>`_)
+* Add argument to disable generation (`#74 <https://github.com/clearpathrobotics/clearpath_simulator/issues/74>`_)
+* Feature: MoveIt Parameters and Enable (`#70 <https://github.com/clearpathrobotics/clearpath_simulator/issues/70>`_)
+* Contributors: Luis Camero
+
 1.0.0 (2024-11-25)
 ------------------
 * Added minimum version.
