@@ -2,6 +2,9 @@
 Changelog for package clearpath_generator_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.3.0 (2025-04-15)
 ------------------
 * Add Ouster (`#68 <https://github.com/clearpathrobotics/clearpath_simulator/issues/68>`_)

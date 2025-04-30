@@ -2,6 +2,11 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Convert `generate` to a boolean in if-statement (`#84 <https://github.com/clearpathrobotics/clearpath_simulator/issues/84>`_) (`#85 <https://github.com/clearpathrobotics/clearpath_simulator/issues/85>`_)
+* Contributors: Chris Iverach-Brereton
+
 1.3.0 (2025-04-15)
 ------------------
 * Fix: Generation disable (`#76 <https://github.com/clearpathrobotics/clearpath_simulator/issues/76>`_)
