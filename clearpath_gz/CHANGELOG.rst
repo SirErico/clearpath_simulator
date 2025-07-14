@@ -2,6 +2,14 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fixed `generate` flag for `robot_spawn` (`#89 <https://github.com/clearpathrobotics/clearpath_simulator/issues/89>`_)
+  * Update simulation.launch.py to have generate setting
+  * properlly define the generate flag usage
+  * added missing import
+* Contributors: Marius Juston
+
 1.3.1 (2025-04-30)
 ------------------
 * Convert `generate` to a boolean in if-statement (`#84 <https://github.com/clearpathrobotics/clearpath_simulator/issues/84>`_) (`#85 <https://github.com/clearpathrobotics/clearpath_simulator/issues/85>`_)
