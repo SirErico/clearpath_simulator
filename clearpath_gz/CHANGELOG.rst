@@ -2,6 +2,12 @@
 Changelog for package clearpath_gz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add explicit gravity & realtime update rate to warehouse world (`#90 <https://github.com/clearpathrobotics/clearpath_simulator/issues/90>`_)
+  All other worlds include these parameters, so to keep things consistent add them to the Warehouse too.
+* Contributors: Chris Iverach-Brereton
+
 2.3.1 (2025-04-30)
 ------------------
 * Convert `generate` to a boolean in if-statement (`#84 <https://github.com/clearpathrobotics/clearpath_simulator/issues/84>`_)
