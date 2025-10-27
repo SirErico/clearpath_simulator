@@ -4,17 +4,15 @@
     <physics type="ode">
       <max_step_size>0.003</max_step_size>
       <real_time_factor>1.0</real_time_factor>
-      <real_time_update_rate>1000</real_time_update_rate>
-      <gravity>0 0 -9.8</gravity>
     </physics>
-    <plugin name='gz::sim::systems::Physics' filename='libgz-sim-physics-system.so'/>
-    <plugin name='gz::sim::systems::UserCommands' filename='libgz-sim-user-commands-system.so'/>
-    <plugin name='gz::sim::systems::SceneBroadcaster' filename='libgz-sim-scene-broadcaster-system.so'/>
-    <plugin name="gz::sim::systems::Sensors" filename="libgz-sim-sensors-system.so">
+    <plugin name='ignition::gazebo::systems::Physics' filename='libignition-gazebo-physics-system.so'/>
+    <plugin name='ignition::gazebo::systems::UserCommands' filename='libignition-gazebo-user-commands-system.so'/>
+    <plugin name='ignition::gazebo::systems::SceneBroadcaster' filename='libignition-gazebo-scene-broadcaster-system.so'/>
+    <plugin name="ignition::gazebo::systems::Sensors" filename="libignition-gazebo-sensors-system.so">
       <render_engine>ogre2</render_engine>
     </plugin>
-    <plugin name="gz::sim::systems::Imu" filename="libgz-sim-imu-system.so"/>
-    <plugin name="gz::sim::systems::NavSat" filename="libgz-sim-navsat-system.so"/>
+    <plugin name="ignition::gazebo::systems::Imu" filename="libignition-gazebo-imu-system.so"/>
+    <plugin name="ignition::gazebo::systems::NavSat" filename="libignition-gazebo-navsat-system.so"/>
 
     <scene>
       <ambient>1 1 1 1</ambient>
