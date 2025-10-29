@@ -12,7 +12,6 @@
       <render_engine>ogre2</render_engine>
     </plugin>
     <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system"/>
-    <plugin name="gz::sim::systems::NavSat" filename="gz-sim-navsat-system"/>
 
     <scene>
       <ambient>1 1 1 1</ambient>
@@ -24,10 +23,11 @@
           <speed>12</speed>
         </clouds>
       </sky>
-      <shadows>1</shadows>
+      <shadows>0</shadows>
     </scene>
     <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
+    <!-- Disable sunlight casting shadows -->
+      <cast_shadows>0</cast_shadows>
       <pose>0 0 10 0 -0 0</pose>
       <diffuse>1.0 1.0 1.0 1</diffuse>
       <specular>0.2 0.2 0.2 1</specular>
@@ -39,14 +39,6 @@
       </attenuation>
       <direction>-0.5 0.5 -1.0</direction>
     </light>
-
-    <!-- Origin placed in northern Alberta, Canada  -->
-    <spherical_coordinates>
-      <latitude_deg>57.0271155</latitude_deg>
-      <longitude_deg>-115.426770</longitude_deg>
-      <elevation>600</elevation>
-      <heading_deg>0</heading_deg>
-    </spherical_coordinates>
 
     <model name='pipeline'>
       <pose>0 20 -1 0 0 3.14159</pose>
