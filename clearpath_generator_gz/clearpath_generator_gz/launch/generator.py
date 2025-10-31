@@ -164,7 +164,6 @@ class GzLaunchGenerator(LaunchGenerator):
                 self.gps_0_bridge_node,
             ],
             Platform.A200: self.common_platform_components,
-            Platform.A300: self.common_platform_components,
             Platform.DD100: self.common_platform_components + [
                 self.imu_0_bridge_node,
                 self.imu_filter_arg,
