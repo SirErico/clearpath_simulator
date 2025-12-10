@@ -7,6 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(ros_gz REQUIRED)
 
 install(
   DIRECTORY config launch meshes worlds
