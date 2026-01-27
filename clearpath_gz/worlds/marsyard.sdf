@@ -1,6 +1,5 @@
-<?xml version="1.0" ?>
-
-<sdf version="1.6">
+<?xml version='1.0' encoding='ASCII' ?>
+<sdf version='1.4'>
   <world name="marsyard">
     <physics type="ode">
       <max_step_size>0.003</max_step_size>
@@ -13,17 +12,6 @@
       <render_engine>ogre2</render_engine>
     </plugin>
     <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system"/>
-    <plugin name="gz::sim::systems::PosePublisher" filename="gz-sim-pose-publisher-system">
-      <publish_link_pose>false</publish_link_pose>
-      <publish_sensor_pose>false</publish_sensor_pose>
-      <publish_collision_pose>false</publish_collision_pose>
-      <publish_visual_pose>false</publish_visual_pose>
-      <publish_nested_model_pose>true</publish_nested_model_pose>
-      <use_pose_vector_msg>true</use_pose_vector_msg>
-      <static_publisher>true</static_publisher>
-      <static_update_frequency>1</static_update_frequency>
-    </plugin>
-
     <scene>
       <ambient>1 1 1 1</ambient>
       <background>0.8 0.5 0.3 1</background>

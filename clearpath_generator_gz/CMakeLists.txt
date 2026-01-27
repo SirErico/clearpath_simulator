@@ -16,6 +16,11 @@ install(PROGRAMS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+install(FILES
+  ${PROJECT_NAME}/pose_publisher.urdf.xacro
+  DESTINATION share/${PROJECT_NAME}/${PROJECT_NAME}
+)
+
 ament_python_install_package(${PROJECT_NAME})
 
 if(BUILD_TESTING)
