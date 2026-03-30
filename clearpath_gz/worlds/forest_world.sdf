@@ -1,0 +1,329 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="forest_world">
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.003</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+
+    <!-- Origin placed on a random olive orchard somewhere in Greece -->
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>39.512152</latitude_deg>
+      <longitude_deg>22.426669</longitude_deg>
+      <elevation>344</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.5 -1.0</direction>
+    </light>
+    
+    <scene>
+      <ambient>1 1 1 1</ambient>
+      <background>0.3 0.7 0.9 1</background>
+      <shadows>1</shadows>
+    </scene>
+
+    <!-- Orchard surface model -->
+    <model name='orchard'>
+      <pose>-10 -10 0 0 0 0</pose>
+      <static>true</static>
+      <link name='orchard'>
+        <collision name='orchard_collision'>
+          <geometry>
+            <mesh>
+              <uri>
+                model://orchard/orchard_world.dae
+              </uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='orchard_visual'>
+          <geometry>
+            <mesh>
+              <uri>
+                model://orchard/orchard_world.dae
+              </uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Pine Trees -->
+    
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_1_1</name>
+      <pose>3.00 3.56 0.000 0 0 -1.976</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_1_2</name>
+      <pose>3.00 7.18 0.000 0 0 1.183</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_1_3</name>
+      <pose>3.00 10.18 0.000 0 0 -2.013</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_1_4</name>
+      <pose>3.00 14.63 0.000 0 0 3.032</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_2_1</name>
+      <pose>6.00 4.10 0.000 0 0 0.515</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_2_2</name>
+      <pose>6.00 6.46 0.000 0 0 -2.885</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_2_3</name>
+      <pose>6.00 10.50 0.000 0 0 1.184</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_2_4</name>
+      <pose>6.00 14.57 0.000 0 0 -2.534</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_3_1</name>
+      <pose>9.00 2.75 0.000 0 0 2.774</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_3_2</name>
+      <pose>9.00 6.93 0.000 0 0 -1.930</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_3_3</name>
+      <pose>9.00 11.27 0.000 0 0 2.350</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_3_4</name>
+      <pose>9.00 14.53 0.000 0 0 -3.121</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_4_1</name>
+      <pose>12.00 3.37 0.000 0 0 -2.256</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_4_2</name>
+      <pose>12.00 7.64 0.000 0 0 -1.475</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_4_3</name>
+      <pose>12.00 10.96 0.000 0 0 2.626</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_4_4</name>
+      <pose>12.00 13.36 0.000 0 0 -0.017</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_5_1</name>
+      <pose>15.00 3.69 0.000 0 0 2.818</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_5_2</name>
+      <pose>15.00 6.56 0.000 0 0 -1.327</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_5_3</name>
+      <pose>15.00 9.87 0.000 0 0 0.844</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_5_4</name>
+      <pose>15.00 14.45 0.000 0 0 1.088</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_6_1</name>
+      <pose>18.00 3.59 0.000 0 0 -0.796</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_6_2</name>
+      <pose>18.00 7.01 0.000 0 0 1.827</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_6_3</name>
+      <pose>18.00 10.15 0.000 0 0 2.369</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_6_4</name>
+      <pose>18.00 14.04 0.000 0 0 1.786</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_7_1</name>
+      <pose>21.00 2.73 0.000 0 0 -2.917</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_7_2</name>
+      <pose>21.00 6.85 0.000 0 0 1.151</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_7_3</name>
+      <pose>21.00 11.18 0.000 0 0 1.519</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_7_4</name>
+      <pose>21.00 14.24 0.000 0 0 -0.417</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_8_1</name>
+      <pose>24.00 3.84 0.000 0 0 1.754</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_8_2</name>
+      <pose>24.00 7.17 0.000 0 0 0.251</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_8_3</name>
+      <pose>24.00 10.38 0.000 0 0 -0.764</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_8_4</name>
+      <pose>24.00 13.24 0.000 0 0 0.658</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_9_1</name>
+      <pose>27.00 2.72 0.000 0 0 3.119</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_9_2</name>
+      <pose>27.00 6.80 0.000 0 0 -1.965</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_9_3</name>
+      <pose>27.00 10.30 0.000 0 0 -0.400</pose>
+    </include>
+
+
+    <include>
+      <uri>model://Pine Tree</uri>
+      <name>tree_9_4</name>
+      <pose>27.00 14.42 0.000 0 0 0.191</pose>
+    </include>
+
+
+  </world>
+</sdf>
