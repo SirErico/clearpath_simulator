@@ -23,6 +23,7 @@ COLS = 5
 SPACING_X = 3.0
 SPACING_Y = 3.5
 JITTER = 0.8
+TREE_GROUND_PENETRATION = 0.08  # Sink trunks slightly into ground to prevent hover gaps
 
 
 def get_heightmap_data(heightmap_path: Path):
@@ -43,9 +44,9 @@ def compute_terrain_z_offset(heights: np.ndarray, size_z: float) -> float:
 
 def get_tree_z(heights: np.ndarray, x: float, y: float, size_x: float, size_y: float, size_z: float, z_offset: float) -> float:
     """Calculate the Z position for a tree on the orchard surface."""
-    # For the orchard surface, trees are positioned at approximately z=0
-    # (the orchard meshes are centered at z=0)
-    return 0.0
+    # Orchard mesh and tree origins are close to z=0, but a tiny negative offset
+    # helps avoid visible floating and lidar rays passing below trunks.
+    return -TREE_GROUND_PENETRATION
 
 
 def generate_tree_block(heights: np.ndarray, terrain_z_offset: float):

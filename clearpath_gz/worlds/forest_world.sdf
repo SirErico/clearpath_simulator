@@ -76,252 +76,252 @@
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_1_1</name>
-      <pose>3.00 3.56 0.000 0 0 -1.976</pose>
+      <pose>3.00 3.76 -0.080 0 0 1.576</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_1_2</name>
-      <pose>3.00 7.18 0.000 0 0 1.183</pose>
+      <pose>3.00 7.32 -0.080 0 0 -2.123</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_1_3</name>
-      <pose>3.00 10.18 0.000 0 0 -2.013</pose>
+      <pose>3.00 10.36 -0.080 0 0 0.715</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_1_4</name>
-      <pose>3.00 14.63 0.000 0 0 3.032</pose>
+      <pose>3.00 14.37 -0.080 0 0 -0.605</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_2_1</name>
-      <pose>6.00 4.10 0.000 0 0 0.515</pose>
+      <pose>6.00 4.00 -0.080 0 0 -1.093</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_2_2</name>
-      <pose>6.00 6.46 0.000 0 0 -2.885</pose>
+      <pose>6.00 7.55 -0.080 0 0 2.326</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_2_3</name>
-      <pose>6.00 10.50 0.000 0 0 1.184</pose>
+      <pose>6.00 10.97 -0.080 0 0 0.681</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_2_4</name>
-      <pose>6.00 14.57 0.000 0 0 -2.534</pose>
+      <pose>6.00 13.63 -0.080 0 0 -0.926</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_3_1</name>
-      <pose>9.00 2.75 0.000 0 0 2.774</pose>
+      <pose>9.00 3.85 -0.080 0 0 1.395</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_3_2</name>
-      <pose>9.00 6.93 0.000 0 0 -1.930</pose>
+      <pose>9.00 7.67 -0.080 0 0 1.691</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_3_3</name>
-      <pose>9.00 11.27 0.000 0 0 2.350</pose>
+      <pose>9.00 10.84 -0.080 0 0 2.016</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_3_4</name>
-      <pose>9.00 14.53 0.000 0 0 -3.121</pose>
+      <pose>9.00 13.92 -0.080 0 0 0.001</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_4_1</name>
-      <pose>12.00 3.37 0.000 0 0 -2.256</pose>
+      <pose>12.00 2.70 -0.080 0 0 -0.854</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_4_2</name>
-      <pose>12.00 7.64 0.000 0 0 -1.475</pose>
+      <pose>12.00 7.08 -0.080 0 0 2.018</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_4_3</name>
-      <pose>12.00 10.96 0.000 0 0 2.626</pose>
+      <pose>12.00 11.24 -0.080 0 0 -0.983</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_4_4</name>
-      <pose>12.00 13.36 0.000 0 0 -0.017</pose>
+      <pose>12.00 14.32 -0.080 0 0 -2.427</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_5_1</name>
-      <pose>15.00 3.69 0.000 0 0 2.818</pose>
+      <pose>15.00 3.09 -0.080 0 0 -0.061</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_5_2</name>
-      <pose>15.00 6.56 0.000 0 0 -1.327</pose>
+      <pose>15.00 7.26 -0.080 0 0 0.055</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_5_3</name>
-      <pose>15.00 9.87 0.000 0 0 0.844</pose>
+      <pose>15.00 10.03 -0.080 0 0 0.920</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_5_4</name>
-      <pose>15.00 14.45 0.000 0 0 1.088</pose>
+      <pose>15.00 14.60 -0.080 0 0 1.425</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_6_1</name>
-      <pose>18.00 3.59 0.000 0 0 -0.796</pose>
+      <pose>18.00 3.70 -0.080 0 0 -2.697</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_6_2</name>
-      <pose>18.00 7.01 0.000 0 0 1.827</pose>
+      <pose>18.00 7.69 -0.080 0 0 -1.202</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_6_3</name>
-      <pose>18.00 10.15 0.000 0 0 2.369</pose>
+      <pose>18.00 9.98 -0.080 0 0 -0.938</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_6_4</name>
-      <pose>18.00 14.04 0.000 0 0 1.786</pose>
+      <pose>18.00 14.45 -0.080 0 0 -2.676</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_7_1</name>
-      <pose>21.00 2.73 0.000 0 0 -2.917</pose>
+      <pose>21.00 4.19 -0.080 0 0 -1.857</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_7_2</name>
-      <pose>21.00 6.85 0.000 0 0 1.151</pose>
+      <pose>21.00 7.52 -0.080 0 0 -1.837</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_7_3</name>
-      <pose>21.00 11.18 0.000 0 0 1.519</pose>
+      <pose>21.00 11.18 -0.080 0 0 1.688</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_7_4</name>
-      <pose>21.00 14.24 0.000 0 0 -0.417</pose>
+      <pose>21.00 13.99 -0.080 0 0 -0.170</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_8_1</name>
-      <pose>24.00 3.84 0.000 0 0 1.754</pose>
+      <pose>24.00 3.17 -0.080 0 0 -0.606</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_8_2</name>
-      <pose>24.00 7.17 0.000 0 0 0.251</pose>
+      <pose>24.00 6.54 -0.080 0 0 -2.421</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_8_3</name>
-      <pose>24.00 10.38 0.000 0 0 -0.764</pose>
+      <pose>24.00 10.27 -0.080 0 0 -1.745</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_8_4</name>
-      <pose>24.00 13.24 0.000 0 0 0.658</pose>
+      <pose>24.00 14.79 -0.080 0 0 1.337</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_9_1</name>
-      <pose>27.00 2.72 0.000 0 0 3.119</pose>
+      <pose>27.00 3.16 -0.080 0 0 -1.363</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_9_2</name>
-      <pose>27.00 6.80 0.000 0 0 -1.965</pose>
+      <pose>27.00 6.81 -0.080 0 0 -2.406</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_9_3</name>
-      <pose>27.00 10.30 0.000 0 0 -0.400</pose>
+      <pose>27.00 10.24 -0.080 0 0 -1.720</pose>
     </include>
 
 
     <include>
       <uri>model://Pine Tree</uri>
       <name>tree_9_4</name>
-      <pose>27.00 14.42 0.000 0 0 0.191</pose>
+      <pose>27.00 13.84 -0.080 0 0 -3.075</pose>
     </include>
 
 
