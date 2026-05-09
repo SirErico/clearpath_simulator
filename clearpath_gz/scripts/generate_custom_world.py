@@ -20,7 +20,7 @@ DEFAULT_OUTPUT = PACKAGE_DIR / 'worlds' / 'forest_world.sdf'
 # Solid-color texture used as the heightmap diffuse so per-patch tiling is invisible.
 SOLID_TEXTURE = PACKAGE_DIR / 'heightmaps' / 'forest_texture.png'
 
-TREE_MODEL_URI = "model://Pine Tree"
+TREE_MODEL_URI = "model://Pine Tree 2"
 
 # Heightmap world placement (meters). Centered at origin by default.
 HEIGHTMAP_POS = (0.0, 0.0, 0.0)
