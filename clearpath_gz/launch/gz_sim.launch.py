@@ -35,6 +35,9 @@ ARGUMENTS = [
     DeclareLaunchArgument('auto_start', default_value='true',
                           choices=['true', 'false'],
                           description='Auto-start Gazebo simulation'),
+    DeclareLaunchArgument('headless', default_value='false',
+                          choices=['true', 'false'],
+                          description='Run Gazebo server-only, no GUI'),
 ]
 
 
@@ -58,17 +61,17 @@ def gz_launch(context, *args, **kwargs):
     if (auto_start == 'true'):
         auto_start_option = ' -r'
 
+    headless = LaunchConfiguration('headless').perform(context)
+    if headless == 'true':
+        gz_args = [LaunchConfiguration('world'), '.sdf', auto_start_option, ' -s -v 2']
+    else:
+        gz_args = [LaunchConfiguration('world'), '.sdf', auto_start_option,
+                   ' -v 4', ' --gui-config ', gui_config]
+
     # Gazebo Simulator
     gz_sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([gz_sim_launch]),
-        launch_arguments=[
-            ('gz_args', [LaunchConfiguration('world'),
-                         '.sdf',
-                         auto_start_option,
-                         ' -v 4',
-                         ' --gui-config ',
-                         gui_config])
-        ]
+        launch_arguments=[('gz_args', gz_args)]
     )
 
     return [gz_sim]
@@ -89,6 +92,8 @@ def generate_launch_description():
         value=[
             os.path.join(pkg_clearpath_gz, 'worlds') + ':',
             os.path.join(pkg_clearpath_gz, 'meshes') + ':',
+            os.path.join(pkg_clearpath_gz, 'models', 'lunar') + ':',
+            os.path.join(pkg_clearpath_gz, 'models', 'martian') + ':',
             ':' + ':'.join(packages_paths)])
 
     # Clock bridge

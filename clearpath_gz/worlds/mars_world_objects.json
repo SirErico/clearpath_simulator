@@ -1,0 +1,377 @@
+{
+  "world": "mars_world",
+  "heightmap": "heightmaps/hills1_513.png",
+  "size": [
+    20.0,
+    20.0,
+    1.0
+  ],
+  "pos": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seed": 2,
+  "objects": [
+    {
+      "name": "rock_0",
+      "model": "model://martian_rock1",
+      "x": -4.5294,
+      "y": -3.8287,
+      "yaw": 1.9743,
+      "z": 0.4883,
+      "scale": 0.7654
+    },
+    {
+      "name": "rock_1",
+      "model": "model://martian_rock1",
+      "x": 1.9019,
+      "y": 4.3427,
+      "yaw": -1.961,
+      "z": 0.4352,
+      "scale": 0.6993
+    },
+    {
+      "name": "rock_2",
+      "model": "model://martian_rock1",
+      "x": -4.2756,
+      "y": 2.9912,
+      "yaw": 0.3912,
+      "z": 0.6997,
+      "scale": 0.8701
+    },
+    {
+      "name": "rock_3",
+      "model": "model://martian_rock1",
+      "x": -1.28,
+      "y": 3.2166,
+      "yaw": -0.4852,
+      "z": 0.6289,
+      "scale": 1.7397
+    },
+    {
+      "name": "rock_4",
+      "model": "model://martian_rock1",
+      "x": 8.8813,
+      "y": 3.4782,
+      "yaw": -0.6809,
+      "z": 0.4384,
+      "scale": 0.9371
+    },
+    {
+      "name": "rock_5",
+      "model": "model://martian_rock1",
+      "x": -2.9267,
+      "y": 0.2103,
+      "yaw": 2.458,
+      "z": 0.7587,
+      "scale": 1.996
+    },
+    {
+      "name": "rock_6",
+      "model": "model://martian_rock1",
+      "x": -3.4552,
+      "y": 8.0601,
+      "yaw": -0.1828,
+      "z": 0.5826,
+      "scale": 1.8488
+    },
+    {
+      "name": "rock_7",
+      "model": "model://martian_rock1",
+      "x": -5.6638,
+      "y": 7.3045,
+      "yaw": 1.1298,
+      "z": 0.7015,
+      "scale": 2.1286
+    },
+    {
+      "name": "rock_8",
+      "model": "model://martian_rock1",
+      "x": 2.7443,
+      "y": -1.7757,
+      "yaw": 0.1042,
+      "z": 0.6393,
+      "scale": 1.6682
+    },
+    {
+      "name": "rock_9",
+      "model": "model://martian_rock1",
+      "x": 6.8802,
+      "y": -1.1745,
+      "yaw": 2.4645,
+      "z": 0.6739,
+      "scale": 1.7047
+    },
+    {
+      "name": "rock_10",
+      "model": "model://martian_rock1",
+      "x": 6.2578,
+      "y": -0.0369,
+      "yaw": 1.2096,
+      "z": 0.5188,
+      "scale": 1.2102
+    },
+    {
+      "name": "rock_11",
+      "model": "model://martian_rock1",
+      "x": 0.4337,
+      "y": -5.3918,
+      "yaw": -2.5089,
+      "z": 0.8051,
+      "scale": 0.6695
+    },
+    {
+      "name": "rock_12",
+      "model": "model://martian_rock1",
+      "x": 3.837,
+      "y": -0.8278,
+      "yaw": 2.499,
+      "z": 0.662,
+      "scale": 2.1033
+    },
+    {
+      "name": "rock_13",
+      "model": "model://martian_rock1",
+      "x": -2.1832,
+      "y": 8.9999,
+      "yaw": 0.5784,
+      "z": 0.6325,
+      "scale": 1.9786
+    },
+    {
+      "name": "rock_14",
+      "model": "model://martian_rock1",
+      "x": -1.7633,
+      "y": -5.7728,
+      "yaw": -2.0623,
+      "z": 0.6177,
+      "scale": 0.9262
+    },
+    {
+      "name": "rock_15",
+      "model": "model://martian_rock1",
+      "x": 1.9723,
+      "y": -7.36,
+      "yaw": -3.0165,
+      "z": 1.0098,
+      "scale": 2.0994
+    },
+    {
+      "name": "rock_16",
+      "model": "model://martian_rock1",
+      "x": -7.6112,
+      "y": -0.9389,
+      "yaw": -0.0723,
+      "z": 0.6744,
+      "scale": 1.7165
+    },
+    {
+      "name": "rock_17",
+      "model": "model://martian_rock1",
+      "x": 0.0763,
+      "y": 8.3095,
+      "yaw": 1.5733,
+      "z": 0.5025,
+      "scale": 1.634
+    },
+    {
+      "name": "rock_18",
+      "model": "model://martian_rock1",
+      "x": 2.2282,
+      "y": 0.1245,
+      "yaw": 2.9202,
+      "z": 0.5714,
+      "scale": 1.0079
+    },
+    {
+      "name": "rock_19",
+      "model": "model://martian_rock1",
+      "x": 3.5915,
+      "y": 1.0468,
+      "yaw": -2.8776,
+      "z": 0.4776,
+      "scale": 1.1331
+    },
+    {
+      "name": "rock_20",
+      "model": "model://martian_rock1",
+      "x": 8.1162,
+      "y": 5.4067,
+      "yaw": -3.061,
+      "z": 0.3704,
+      "scale": 1.1339
+    },
+    {
+      "name": "rock_21",
+      "model": "model://martian_rock1",
+      "x": -9.3137,
+      "y": 6.2219,
+      "yaw": -2.4481,
+      "z": 0.7754,
+      "scale": 0.7034
+    },
+    {
+      "name": "rock_22",
+      "model": "model://martian_rock1",
+      "x": 9.1558,
+      "y": -1.0285,
+      "yaw": -1.1411,
+      "z": 0.4355,
+      "scale": 0.6882
+    },
+    {
+      "name": "rock_23",
+      "model": "model://martian_rock1",
+      "x": -2.0977,
+      "y": -2.5453,
+      "yaw": 0.1475,
+      "z": 0.6401,
+      "scale": 0.6122
+    },
+    {
+      "name": "rock_24",
+      "model": "model://martian_rock1",
+      "x": -1.1304,
+      "y": -3.7562,
+      "yaw": 0.7121,
+      "z": 0.7108,
+      "scale": 1.1138
+    },
+    {
+      "name": "rock_25",
+      "model": "model://martian_rock1",
+      "x": 7.783,
+      "y": 8.7755,
+      "yaw": -2.7682,
+      "z": 0.5328,
+      "scale": 0.9763
+    },
+    {
+      "name": "rock_26",
+      "model": "model://martian_rock1",
+      "x": 1.1974,
+      "y": 5.1425,
+      "yaw": -2.7393,
+      "z": 0.4263,
+      "scale": 0.9326
+    },
+    {
+      "name": "rock_27",
+      "model": "model://martian_rock1",
+      "x": -0.8223,
+      "y": 3.2051,
+      "yaw": 2.5342,
+      "z": 0.6545,
+      "scale": 2.1606
+    },
+    {
+      "name": "rock_28",
+      "model": "model://martian_rock1",
+      "x": 5.5814,
+      "y": -8.4981,
+      "yaw": 2.9948,
+      "z": 0.7427,
+      "scale": 1.7063
+    },
+    {
+      "name": "rock_29",
+      "model": "model://martian_rock1",
+      "x": 2.2943,
+      "y": -2.1728,
+      "yaw": -0.3355,
+      "z": 0.7352,
+      "scale": 2.0483
+    },
+    {
+      "name": "rock_30",
+      "model": "model://martian_rock1",
+      "x": 6.1566,
+      "y": 0.889,
+      "yaw": 1.8375,
+      "z": 0.4098,
+      "scale": 1.3308
+    },
+    {
+      "name": "rock_31",
+      "model": "model://martian_rock1",
+      "x": 9.0152,
+      "y": 1.998,
+      "yaw": 2.9386,
+      "z": 0.4534,
+      "scale": 0.6792
+    },
+    {
+      "name": "rock_32",
+      "model": "model://martian_rock1",
+      "x": 7.2712,
+      "y": 1.1282,
+      "yaw": 1.3423,
+      "z": 0.3913,
+      "scale": 0.9467
+    },
+    {
+      "name": "rock_33",
+      "model": "model://martian_rock1",
+      "x": 0.9251,
+      "y": -4.0037,
+      "yaw": -2.4788,
+      "z": 0.7483,
+      "scale": 0.6057
+    },
+    {
+      "name": "rock_34",
+      "model": "model://martian_rock1",
+      "x": 7.73,
+      "y": 3.2472,
+      "yaw": -1.8534,
+      "z": 0.4091,
+      "scale": 1.0641
+    },
+    {
+      "name": "rock_35",
+      "model": "model://martian_rock1",
+      "x": -0.6537,
+      "y": 6.0475,
+      "yaw": -2.4025,
+      "z": 0.5804,
+      "scale": 2.342
+    },
+    {
+      "name": "rock_36",
+      "model": "model://martian_rock1",
+      "x": 8.4343,
+      "y": -4.8515,
+      "yaw": 0.8846,
+      "z": 0.7035,
+      "scale": 1.2482
+    },
+    {
+      "name": "rock_37",
+      "model": "model://martian_rock1",
+      "x": 3.7491,
+      "y": -7.8486,
+      "yaw": -0.1887,
+      "z": 0.8171,
+      "scale": 1.6593
+    },
+    {
+      "name": "rock_38",
+      "model": "model://martian_rock1",
+      "x": 2.403,
+      "y": 3.6631,
+      "yaw": 2.4591,
+      "z": 0.4707,
+      "scale": 1.0343
+    },
+    {
+      "name": "rock_39",
+      "model": "model://martian_rock1",
+      "x": -6.5893,
+      "y": -2.0785,
+      "yaw": 0.4325,
+      "z": 0.6524,
+      "scale": 2.329
+    }
+  ]
+}

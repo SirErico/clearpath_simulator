@@ -4,14 +4,12 @@
     <link name="link">
       <collision name="collision">
         <geometry>
-          <mesh>
-            <uri>model://Pine Tree/meshes/pine_tree.dae</uri>
-            <submesh>
-              <name>Bark</name>
-            </submesh>
-            <scale>3.0 3.0 1.0</scale>
-          </mesh>
+          <cylinder>
+            <radius>0.15</radius>
+            <length>4.0</length>
+          </cylinder>
         </geometry>
+        <pose>0 0 2.0 0 0 0</pose>
       </collision>
       <visual name="branch">
         <geometry>
