@@ -59,4 +59,4 @@ mars_world.sdf
 clearpath_gz/models/lunar/
 clearpath_gz/models/martian/
 textures/
-worlds/*.json
+clearpath_gz/worlds/*.json
