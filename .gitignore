@@ -54,3 +54,8 @@ qtcreator-*
 CATKIN_IGNORE
 
 forest_world*
+moon_world.sdf
+mars_world.sdf
+clearpath_gz/models/lunar/
+clearpath_gz/models/martian/
+textures/
