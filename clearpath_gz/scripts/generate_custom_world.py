@@ -29,7 +29,7 @@ from PIL import Image
 SCRIPT_DIR = Path(__file__).resolve().parent
 PACKAGE_DIR = SCRIPT_DIR.parent
 
-DEFAULT_HEIGHTMAP = PACKAGE_DIR / 'heightmaps' / 'hills1_513.png'
+HEIGHTMAPS_DIR = PACKAGE_DIR / 'heightmaps'
 DEFAULT_OUTPUT = PACKAGE_DIR / 'worlds' / 'forest_world.sdf'
 # Default heightmap diffuse texture (overridable with --texture).
 SOLID_TEXTURE = PACKAGE_DIR / 'textures' / 'forest_texture.png'
@@ -50,6 +50,8 @@ CONTACT_PLUGIN = (
 )
 SCENE_PRESETS = {
     "forest": {
+        "heightmap": HEIGHTMAPS_DIR / 'forest_heightmap.png',
+        "texture_size": 4.0,    # tiles ~5x across a 20 m terrain (grass detail)
         "extra_plugins": "",
         "spherical": True,
         "sun_pose": "0 0 10 0 0 0",
@@ -60,6 +62,8 @@ SCENE_PRESETS = {
         "grid": None,
     },
     "mars": {
+        "heightmap": HEIGHTMAPS_DIR / 'mars_heightmap.png',
+        "texture_size": 20.0,   # one full copy across the 20 m terrain
         "extra_plugins": CONTACT_PLUGIN,
         "spherical": False,
         "sun_pose": "0 0 100 0 0 0",
@@ -70,12 +74,14 @@ SCENE_PRESETS = {
         "grid": "false",
     },
     "moon": {
+        "heightmap": HEIGHTMAPS_DIR / 'moon_heightmap.png',
+        "texture_size": 20.0,   # one full copy across the 20 m terrain
         "extra_plugins": CONTACT_PLUGIN,
         "spherical": False,
         "sun_pose": "0 0 100 0 0 0",
         "sun_intensity": 3,
         "sun_direction": "0.25 -0.5 -0.4",
-        "ambient": "0.75 0.75 0.75 1",
+        "ambient": "0.5 0.5 0.5 1",
         "background": "0.05 0.05 0.05 1",
         "grid": "false",
     },
@@ -309,7 +315,8 @@ def generate_object_block(heightmap: np.ndarray, size, pos, object_count: int, s
     return "\n".join(blocks), placements
 
 
-def generate_terrain(heightmap_path: Path, size, pos, texture_path: Path = SOLID_TEXTURE):
+def generate_terrain(heightmap_path: Path, size, pos, texture_path: Path = SOLID_TEXTURE,
+                     texture_size: float = 1000.0):
     sx, sy, sz = size
     px, py, pz = pos
     return f"""
@@ -348,7 +355,7 @@ def generate_terrain(heightmap_path: Path, size, pos, texture_path: Path = SOLID
               <pos>0 0 0</pos>
               <sampling>1</sampling>
               <texture>
-                <size>1000</size>
+                <size>{texture_size:g}</size>
                 <diffuse>file://{texture_path}</diffuse>
                 <normal>file://{texture_path}</normal>
               </texture>
@@ -363,11 +370,13 @@ def generate_world(heightmap_path: Path, size, pos, with_objects: bool, object_c
                    model_uris=DEFAULT_MODEL_URIS, name_prefix=DEFAULT_NAME_PREFIX,
                    world_name=DEFAULT_WORLD_NAME, texture_path: Path = SOLID_TEXTURE,
                    scene=DEFAULT_SCENE, object_kind="include", scale=1.0, scale_jitter=0.0,
-                   embed_frac=0.1):
+                   embed_frac=0.1, texture_size=None):
     """Build the SDF string. Returns (sdf, placements)."""
     preset = SCENE_PRESETS[scene]
+    if texture_size is None:
+        texture_size = preset["texture_size"]
     heightmap = load_heightmap(heightmap_path)
-    terrain_block = generate_terrain(heightmap_path, size, pos, texture_path)
+    terrain_block = generate_terrain(heightmap_path, size, pos, texture_path, texture_size)
     if with_objects:
         object_block, placements = generate_object_block(
             heightmap, size, pos, object_count, seed=seed,
@@ -442,8 +451,9 @@ def generate_world(heightmap_path: Path, size, pos, with_objects: bool, object_c
 
 def parse_args():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--heightmap', type=Path, default=DEFAULT_HEIGHTMAP,
-                   help='Path to greyscale heightmap PNG (square, side = 2^n + 1).')
+    p.add_argument('--heightmap', type=Path, default=None,
+                   help='Path to greyscale heightmap PNG (square, side = 2^n + 1). '
+                        "Defaults to the --scene preset's heightmap_<scene>.png.")
     p.add_argument('--output', type=Path, default=DEFAULT_OUTPUT,
                    help='Output SDF path.')
     p.add_argument('--size', type=float, nargs=3, metavar=('X', 'Y', 'Z'),
@@ -465,6 +475,9 @@ def parse_args():
                    help='SDF <world name>; must match the launch "world" arg and filename stem.')
     p.add_argument('--texture', type=Path, default=SOLID_TEXTURE,
                    help='Heightmap diffuse texture PNG.')
+    p.add_argument('--texture-size', dest='texture_size', type=float, default=None,
+                   help='Meters spanned by one copy of the texture (smaller = more visible '
+                        "tiling/detail). Defaults to the --scene preset's texture_size.")
     p.add_argument('--scene', choices=sorted(SCENE_PRESETS), default=DEFAULT_SCENE,
                    help='Lighting/scene preset.')
     p.add_argument('--object-kind', choices=['include', 'mesh'], default='include',
@@ -483,7 +496,8 @@ def parse_args():
 
 def main():
     args = parse_args()
-    heightmap_path = args.heightmap.resolve()
+    heightmap = args.heightmap or SCENE_PRESETS[args.scene]["heightmap"]
+    heightmap_path = heightmap.resolve()
     if not heightmap_path.exists():
         raise SystemExit(f"Heightmap not found: {heightmap_path}")
     texture_path = args.texture.resolve()
@@ -512,7 +526,8 @@ def main():
                                      object_kind=args.object_kind,
                                      scale=args.scale,
                                      scale_jitter=args.scale_jitter,
-                                     embed_frac=args.embed_frac)
+                                     embed_frac=args.embed_frac,
+                                     texture_size=args.texture_size)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(sdf, encoding='utf-8')
