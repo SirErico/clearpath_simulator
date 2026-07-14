@@ -22,6 +22,8 @@ python generate_custom_world.py --scene mars --world-name mars_world \\
 import argparse
 import itertools
 import json
+import shlex
+import sys
 import numpy as np
 from pathlib import Path
 from PIL import Image
@@ -532,6 +534,11 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(sdf, encoding='utf-8')
 
+    command = shlex.join(['python', sys.argv[0], *sys.argv[1:]])
+    if args.seed is None:
+        print("[WARN] No --seed given; the saved command will not reproduce "
+              "the same object placements.")
+
     if not args.no_positions_file and placements:
         positions_path = args.output.with_name(f"{args.output.stem}_objects.json")
         # Store the heightmap relative to the package so the sidecar stays
@@ -541,6 +548,7 @@ def main():
         except ValueError:
             heightmap_field = str(heightmap_path)
         positions_path.write_text(json.dumps({
+            "command": command,
             "world": args.world_name,
             "heightmap": heightmap_field,
             "size": list(args.size),
@@ -554,6 +562,7 @@ def main():
     print(f"[INFO] Generated: {args.output}")
     print(f"[INFO] Heightmap: {heightmap_path} -> {sx}x{sy}x{sz} m centered at {HEIGHTMAP_POS}")
     print(f"[INFO] Objects: {'disabled' if args.no_objects else 'enabled'}")
+    print(f"[INFO] Regenerate with: {command}")
 
 
 if __name__ == "__main__":
