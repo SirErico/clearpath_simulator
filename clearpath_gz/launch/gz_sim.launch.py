@@ -92,6 +92,7 @@ def generate_launch_description():
         value=[
             os.path.join(pkg_clearpath_gz, 'worlds') + ':',
             os.path.join(pkg_clearpath_gz, 'meshes') + ':',
+            os.path.join(pkg_clearpath_gz, 'models') + ':',
             os.path.join(pkg_clearpath_gz, 'models', 'lunar') + ':',
             os.path.join(pkg_clearpath_gz, 'models', 'martian') + ':',
             ':' + ':'.join(packages_paths)])

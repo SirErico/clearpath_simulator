@@ -51,7 +51,7 @@ CONTACT_PLUGIN = (
 SCENE_PRESETS = {
     "forest": {
         "heightmap": HEIGHTMAPS_DIR / 'forest_heightmap.png',
-        "texture_size": 4.0,    # tiles ~5x across a 20 m terrain (grass detail)
+        "texture_size": 20.0,    # tiles ~5x across a 20 m terrain (grass detail)
         "extra_plugins": "",
         "spherical": True,
         "sun_pose": "0 0 10 0 0 0",

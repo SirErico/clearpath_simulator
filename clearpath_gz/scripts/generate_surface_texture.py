@@ -31,10 +31,20 @@ PALETTES = {
         (0.86, (216, 217, 220)),  # highland grey
         (1.00, (240, 241, 244)),  # bright highlight
     ],
+    "forest": [
+        # Dark soil/leaf-litter shadow through to sunlit grass patches.
+        (0.00, (35, 26, 16)),     # deep soil shadow
+        (0.25, (61, 44, 25)),     # dark dirt / leaf litter
+        (0.50, (79, 68, 36)),     # mixed dirt and dead grass
+        (0.70, (86, 104, 48)),    # mossy transition
+        (0.86, (108, 138, 66)),   # grass green
+        (1.00, (149, 173, 92)),   # sunlit grass highlight
+    ],
 }
 DEFAULT_OUTPUTS = {
     "mars": PACKAGE_DIR / 'textures' / 'mars_texture.png',
     "moon": PACKAGE_DIR / 'textures' / 'moon_texture.png',
+    "forest": PACKAGE_DIR / 'textures' / 'forest_texture.png',
 }
 
 
