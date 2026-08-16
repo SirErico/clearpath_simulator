@@ -117,8 +117,15 @@ def ensure_solid_texture(path: Path, rgb=(80, 130, 70)):
 
 
 def load_heightmap(path: Path) -> np.ndarray:
-    """Load a greyscale heightmap as a float32 array in [0, 1]."""
-    arr = np.array(Image.open(path).convert('L'), dtype=np.float32) / 255.0
+    """Load a greyscale heightmap as a float32 array in [0, 1].
+
+    Normalized by the brightest pixel, not 255, to match how gz-sim scales
+    heightmap z (`size_z / max_pixel`). Identical to /255 for images that
+    reach white; correct for the ones that don't.
+    """
+    arr = np.array(Image.open(path).convert('L'), dtype=np.float32)
+    peak = float(arr.max())
+    arr = arr / peak if peak > 0.0 else arr
     h, w = arr.shape
     if w != h or (w - 1) & (w - 2):
         # Gazebo requires square images with side = 2^n + 1.
