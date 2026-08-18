@@ -58,4 +58,4 @@ moon_world*
 mars_world*
 models/
 textures/
-clearpath_gz/worlds/*.json
+clearpath_gz/worlds/*_objects.json
