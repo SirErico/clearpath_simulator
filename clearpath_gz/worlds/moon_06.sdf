@@ -1,0 +1,651 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="moon_06">
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"></plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.003</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 100 0 0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <intensity>3</intensity>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>0.25 -0.5 -0.4</direction>
+    </light>
+
+    <scene>
+      <ambient>0.5 0.5 0.5 1</ambient>
+      <background>0.05 0.05 0.05 1</background>
+      <grid>false</grid>
+      <shadows>1</shadows>
+    </scene>
+
+    
+    <model name='terrain'>
+      <static>true</static>
+      <pose>0.00 0.00 0.00 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <heightmap>
+              <uri>file:///ws/src/clearpath_simulator/clearpath_gz/heightmaps/moon_06_heightmap.png</uri>
+              <size>20.00 20.00 1.00</size>
+              <pos>0 0 0</pos>
+            </heightmap>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>1.5</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e6</kp>
+                <kd>1e2</kd>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <heightmap>
+              <uri>file:///ws/src/clearpath_simulator/clearpath_gz/heightmaps/moon_06_heightmap.png</uri>
+              <size>20.00 20.00 1.00</size>
+              <pos>0 0 0</pos>
+              <sampling>1</sampling>
+              <texture>
+                <size>20</size>
+                <diffuse>file:///ws/src/clearpath_simulator/clearpath_gz/textures/moon_texture.png</diffuse>
+                <normal>file:///ws/src/clearpath_simulator/clearpath_gz/textures/moon_texture.png</normal>
+              </texture>
+            </heightmap>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Scattered objects (lunar_rock) -->
+    
+    <model name="lunar_rock_0">
+      <static>true</static>
+      <pose>8.198 -8.115 0.427 0 0 1.599</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.120 0.240 0.120</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.120 0.240 0.120</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_1">
+      <static>true</static>
+      <pose>-7.625 -2.682 0.977 0 0 -1.249</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.290 4.579 2.290</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.290 4.579 2.290</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_2">
+      <static>true</static>
+      <pose>6.579 -7.631 0.468 0 0 1.375</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.278 2.556 1.278</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.278 2.556 1.278</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_3">
+      <static>true</static>
+      <pose>-1.664 -5.659 0.458 0 0 1.146</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.357 6.714 3.357</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.357 6.714 3.357</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_4">
+      <static>true</static>
+      <pose>5.974 2.182 0.489 0 0 -2.635</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.805 1.610 0.805</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.805 1.610 0.805</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_5">
+      <static>true</static>
+      <pose>-0.558 8.960 1.009 0 0 2.430</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.824 1.648 0.824</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.824 1.648 0.824</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_6">
+      <static>true</static>
+      <pose>1.232 8.529 0.790 0 0 1.460</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.692 3.383 1.692</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.692 3.383 1.692</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_7">
+      <static>true</static>
+      <pose>9.141 2.862 0.407 0 0 -0.947</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.360 0.720 0.360</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.360 0.720 0.360</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_8">
+      <static>true</static>
+      <pose>5.722 -1.640 0.850 0 0 -0.559</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.594 7.188 3.594</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.594 7.188 3.594</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_9">
+      <static>true</static>
+      <pose>-6.304 7.253 0.486 0 0 -3.087</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.323 0.646 0.323</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.323 0.646 0.323</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_10">
+      <static>true</static>
+      <pose>-7.713 -0.535 0.799 0 0 2.730</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.941 5.882 2.941</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.941 5.882 2.941</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_11">
+      <static>true</static>
+      <pose>-7.651 3.003 0.345 0 0 -2.338</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>-0.024 -0.048 -0.024</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>-0.024 -0.048 -0.024</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_12">
+      <static>true</static>
+      <pose>3.776 -1.774 0.881 0 0 -0.843</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.328 6.656 3.328</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.328 6.656 3.328</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_13">
+      <static>true</static>
+      <pose>-7.191 -2.125 0.984 0 0 0.099</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.682 7.365 3.682</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.682 7.365 3.682</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_14">
+      <static>true</static>
+      <pose>-9.467 -4.111 1.027 0 0 1.933</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.983 5.967 2.983</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.983 5.967 2.983</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_15">
+      <static>true</static>
+      <pose>0.856 -6.654 0.609 0 0 -1.958</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.134 2.269 1.134</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.134 2.269 1.134</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_16">
+      <static>true</static>
+      <pose>8.142 2.147 0.598 0 0 2.383</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.469 4.937 2.469</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.469 4.937 2.469</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_17">
+      <static>true</static>
+      <pose>1.357 -2.903 0.866 0 0 -2.095</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.220 6.441 3.220</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.220 6.441 3.220</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_18">
+      <static>true</static>
+      <pose>-4.876 -1.621 0.831 0 0 -0.913</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.471 6.942 3.471</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.471 6.942 3.471</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_19">
+      <static>true</static>
+      <pose>6.241 -4.498 0.833 0 0 -0.957</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>-0.322 -0.644 -0.322</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>-0.322 -0.644 -0.322</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_20">
+      <static>true</static>
+      <pose>3.927 3.722 0.477 0 0 2.399</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.740 1.480 0.740</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.740 1.480 0.740</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_21">
+      <static>true</static>
+      <pose>5.893 0.047 0.509 0 0 -2.169</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.352 0.704 0.352</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.352 0.704 0.352</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_22">
+      <static>true</static>
+      <pose>-1.606 -2.383 0.505 0 0 -1.918</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.533 3.067 1.533</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.533 3.067 1.533</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_23">
+      <static>true</static>
+      <pose>-0.011 1.954 0.388 0 0 0.174</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.291 0.581 0.291</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.291 0.581 0.291</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_24">
+      <static>true</static>
+      <pose>4.190 9.185 0.650 0 0 1.943</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.229 0.459 0.229</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.229 0.459 0.229</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_25">
+      <static>true</static>
+      <pose>1.267 -0.312 0.723 0 0 0.678</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.325 8.650 4.325</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.325 8.650 4.325</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_26">
+      <static>true</static>
+      <pose>1.435 -6.499 0.757 0 0 -1.815</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.493 4.987 2.493</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.493 4.987 2.493</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_27">
+      <static>true</static>
+      <pose>8.865 0.582 0.748 0 0 -2.284</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.325 2.650 1.325</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.325 2.650 1.325</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_28">
+      <static>true</static>
+      <pose>3.483 -2.742 0.764 0 0 -0.293</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.262 0.523 0.262</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.262 0.523 0.262</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_29">
+      <static>true</static>
+      <pose>4.851 -3.886 0.960 0 0 2.420</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.646 3.292 1.646</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.646 3.292 1.646</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_30">
+      <static>true</static>
+      <pose>-1.868 -1.933 0.414 0 0 -1.857</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.389 0.778 0.389</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>0.389 0.778 0.389</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_31">
+      <static>true</static>
+      <pose>-3.117 -5.080 0.349 0 0 2.843</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.327 4.654 2.327</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.327 4.654 2.327</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_32">
+      <static>true</static>
+      <pose>0.719 -7.453 0.593 0 0 3.055</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>-0.034 -0.068 -0.034</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>-0.034 -0.068 -0.034</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_33">
+      <static>true</static>
+      <pose>-1.038 -4.556 0.482 0 0 2.843</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.133 2.266 1.133</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>1.133 2.266 1.133</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_34">
+      <static>true</static>
+      <pose>-2.993 -6.357 0.285 0 0 -0.055</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.192 8.383 4.192</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.192 8.383 4.192</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_35">
+      <static>true</static>
+      <pose>-0.068 2.539 0.552 0 0 -2.093</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.125 6.250 3.125</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>3.125 6.250 3.125</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_36">
+      <static>true</static>
+      <pose>-2.385 -4.130 0.522 0 0 1.839</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.970 5.940 2.970</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.970 5.940 2.970</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_37">
+      <static>true</static>
+      <pose>7.544 7.279 0.610 0 0 -1.034</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.637 5.274 2.637</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>2.637 5.274 2.637</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_38">
+      <static>true</static>
+      <pose>8.631 -6.007 0.707 0 0 -1.902</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.336 8.672 4.336</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.336 8.672 4.336</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="lunar_rock_39">
+      <static>true</static>
+      <pose>4.888 -5.589 0.931 0 0 -0.653</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.296 8.593 4.296</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://lunar_rock1/meshes/lunar_rock1.glb</uri><scale>4.296 8.593 4.296</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+  </world>
+</sdf>

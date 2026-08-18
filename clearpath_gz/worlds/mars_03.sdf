@@ -1,0 +1,651 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="mars_03">
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"></plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.003</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 100 0 0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <intensity>4</intensity>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>0.25 -0.5 -0.4</direction>
+    </light>
+
+    <scene>
+      <ambient>0.6 0.52 0.45 1</ambient>
+      <background>0.7 0.5 0.3 1</background>
+      <grid>false</grid>
+      <shadows>1</shadows>
+    </scene>
+
+    
+    <model name='terrain'>
+      <static>true</static>
+      <pose>0.00 0.00 0.00 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <heightmap>
+              <uri>file:///ws/src/clearpath_simulator/clearpath_gz/heightmaps/mars_03_heightmap.png</uri>
+              <size>20.00 20.00 1.00</size>
+              <pos>0 0 0</pos>
+            </heightmap>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.5</mu>
+                <mu2>1.5</mu2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <kp>1e6</kp>
+                <kd>1e2</kd>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <heightmap>
+              <uri>file:///ws/src/clearpath_simulator/clearpath_gz/heightmaps/mars_03_heightmap.png</uri>
+              <size>20.00 20.00 1.00</size>
+              <pos>0 0 0</pos>
+              <sampling>1</sampling>
+              <texture>
+                <size>20</size>
+                <diffuse>file:///ws/src/clearpath_simulator/clearpath_gz/textures/mars_texture.png</diffuse>
+                <normal>file:///ws/src/clearpath_simulator/clearpath_gz/textures/mars_texture.png</normal>
+              </texture>
+            </heightmap>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Scattered objects (martian_rock) -->
+    
+    <model name="martian_rock_0">
+      <static>true</static>
+      <pose>5.100 -6.031 0.793 0 0 2.450</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.464 0.929 0.464</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.464 0.929 0.464</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_1">
+      <static>true</static>
+      <pose>4.102 6.878 0.938 0 0 -1.760</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.125 6.251 3.125</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.125 6.251 3.125</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_2">
+      <static>true</static>
+      <pose>-2.712 3.000 0.975 0 0 -1.352</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.986 5.972 2.986</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.986 5.972 2.986</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_3">
+      <static>true</static>
+      <pose>-5.306 5.683 0.371 0 0 2.475</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.540 1.080 0.540</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.540 1.080 0.540</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_4">
+      <static>true</static>
+      <pose>-8.659 5.639 0.586 0 0 0.744</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.085 4.169 2.085</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.085 4.169 2.085</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_5">
+      <static>true</static>
+      <pose>7.431 -7.426 0.806 0 0 -3.008</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.429 2.858 1.429</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.429 2.858 1.429</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_6">
+      <static>true</static>
+      <pose>-5.647 4.666 0.820 0 0 -2.953</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.317 6.635 3.317</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.317 6.635 3.317</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_7">
+      <static>true</static>
+      <pose>7.932 -3.589 0.905 0 0 -1.776</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.959 1.918 0.959</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.959 1.918 0.959</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_8">
+      <static>true</static>
+      <pose>7.315 0.116 1.240 0 0 -0.208</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.547 7.094 3.547</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.547 7.094 3.547</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_9">
+      <static>true</static>
+      <pose>6.186 1.360 1.186 0 0 2.441</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.615 5.230 2.615</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.615 5.230 2.615</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_10">
+      <static>true</static>
+      <pose>7.095 0.553 1.326 0 0 -1.652</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.752 7.504 3.752</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.752 7.504 3.752</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_11">
+      <static>true</static>
+      <pose>3.525 7.673 0.953 0 0 0.887</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.035 6.071 3.035</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.035 6.071 3.035</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_12">
+      <static>true</static>
+      <pose>-2.939 6.373 0.500 0 0 -2.930</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.791 3.582 1.791</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.791 3.582 1.791</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_13">
+      <static>true</static>
+      <pose>1.531 3.833 0.839 0 0 -0.158</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.324 0.649 0.324</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.324 0.649 0.324</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_14">
+      <static>true</static>
+      <pose>-3.360 -1.095 0.860 0 0 -0.363</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.793 1.586 0.793</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.793 1.586 0.793</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_15">
+      <static>true</static>
+      <pose>-1.664 -3.604 0.587 0 0 2.493</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.064 0.128 0.064</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.064 0.128 0.064</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_16">
+      <static>true</static>
+      <pose>2.413 4.239 1.049 0 0 1.855</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.347 2.693 1.347</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.347 2.693 1.347</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_17">
+      <static>true</static>
+      <pose>-3.206 -8.406 0.588 0 0 -2.375</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.589 3.178 1.589</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.589 3.178 1.589</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_18">
+      <static>true</static>
+      <pose>7.770 8.138 0.414 0 0 -2.350</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.283 2.566 1.283</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.283 2.566 1.283</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_19">
+      <static>true</static>
+      <pose>2.855 -6.802 0.955 0 0 -2.258</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.634 3.268 1.634</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.634 3.268 1.634</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_20">
+      <static>true</static>
+      <pose>6.811 -2.230 0.653 0 0 -2.298</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.050 0.100 0.050</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.050 0.100 0.050</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_21">
+      <static>true</static>
+      <pose>6.139 -8.938 1.196 0 0 -0.462</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.896 7.792 3.896</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.896 7.792 3.896</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_22">
+      <static>true</static>
+      <pose>-8.454 4.305 0.683 0 0 1.208</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.902 5.805 2.902</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.902 5.805 2.902</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_23">
+      <static>true</static>
+      <pose>8.253 -7.254 0.754 0 0 -2.901</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.084 2.168 1.084</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.084 2.168 1.084</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_24">
+      <static>true</static>
+      <pose>6.751 -6.011 0.646 0 0 -0.893</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.416 0.832 0.416</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.416 0.832 0.416</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_25">
+      <static>true</static>
+      <pose>-0.241 1.038 0.999 0 0 -1.980</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.580 3.160 1.580</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.580 3.160 1.580</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_26">
+      <static>true</static>
+      <pose>3.050 0.517 0.898 0 0 -2.827</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.041 4.082 2.041</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.041 4.082 2.041</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_27">
+      <static>true</static>
+      <pose>-0.151 7.072 0.785 0 0 -1.093</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.444 2.888 1.444</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.444 2.888 1.444</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_28">
+      <static>true</static>
+      <pose>0.058 6.377 1.238 0 0 -0.466</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>4.118 8.235 4.118</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>4.118 8.235 4.118</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_29">
+      <static>true</static>
+      <pose>-7.902 -0.476 1.035 0 0 -1.461</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.969 5.937 2.969</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.969 5.937 2.969</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_30">
+      <static>true</static>
+      <pose>-0.762 -2.394 1.109 0 0 -2.964</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.232 6.464 3.232</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.232 6.464 3.232</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_31">
+      <static>true</static>
+      <pose>5.646 -9.492 0.920 0 0 2.782</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.123 4.245 2.123</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.123 4.245 2.123</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_32">
+      <static>true</static>
+      <pose>6.758 -9.015 0.719 0 0 -2.552</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.104 0.208 0.104</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.104 0.208 0.104</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_33">
+      <static>true</static>
+      <pose>9.217 0.678 1.184 0 0 -0.654</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.217 4.434 2.217</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>2.217 4.434 2.217</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_34">
+      <static>true</static>
+      <pose>-2.919 3.582 0.645 0 0 -3.104</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.756 1.513 0.756</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.756 1.513 0.756</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_35">
+      <static>true</static>
+      <pose>-5.724 -3.684 1.323 0 0 1.022</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.496 6.991 3.496</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.496 6.991 3.496</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_36">
+      <static>true</static>
+      <pose>3.325 -0.281 0.695 0 0 0.637</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.695 1.390 0.695</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>0.695 1.390 0.695</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_37">
+      <static>true</static>
+      <pose>2.830 0.345 1.132 0 0 -0.461</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.837 7.674 3.837</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>3.837 7.674 3.837</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_38">
+      <static>true</static>
+      <pose>-2.485 -6.206 0.680 0 0 -2.895</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.670 3.341 1.670</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>1.670 3.341 1.670</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="martian_rock_39">
+      <static>true</static>
+      <pose>-0.534 8.815 0.440 0 0 -1.246</pose>
+      <link name="link">
+        <pose>0 0 0 1.570796 0.000000 0.000000</pose>
+        <visual name="visual">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>-0.330 -0.660 -0.330</scale></mesh></geometry>
+        </visual>
+        <collision name="collision">
+          <geometry><mesh><uri>model://martian_rock1/meshes/martian_rock1.glb</uri><scale>-0.330 -0.660 -0.330</scale></mesh></geometry>
+        </collision>
+      </link>
+    </model>
+
+  </world>
+</sdf>

@@ -48,8 +48,13 @@ DEFAULT_OUTPUTS = {
 }
 
 
-def fractal_noise(shape: tuple[int, int], octaves: int, rng: np.random.Generator) -> np.ndarray:
-    """Sum of bicubically-upsampled random octaves, normalized to [0, 1]."""
+def fractal_noise(shape: tuple[int, int], octaves: int, rng: np.random.Generator,
+                  persistence: float = 0.5) -> np.ndarray:
+    """Sum of bicubically-upsampled random octaves, normalized to [0, 1].
+
+    persistence is the per-octave amplitude decay: lower values suppress
+    finer octaves more, giving broad smooth swells instead of small bumps.
+    """
     h, w = shape
     field = np.zeros(shape, dtype=np.float32)
     amplitude = 1.0
@@ -64,7 +69,7 @@ def fractal_noise(shape: tuple[int, int], octaves: int, rng: np.random.Generator
         ) / 255.0
         field += amplitude * up
         total_amp += amplitude
-        amplitude *= 0.5
+        amplitude *= persistence
     field /= total_amp
     field -= field.min()
     field /= max(field.max(), 1e-6)
