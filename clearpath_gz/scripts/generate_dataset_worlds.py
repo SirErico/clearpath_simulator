@@ -46,7 +46,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument('--val', type=int, required=True)
     p.add_argument('--test', type=int, required=True)
     p.add_argument('--root-seed', dest='root_seed', type=int, required=True,
-                   help='terrain_seed = root_seed + i, object_seed = root_seed + %d + i.' % OBJECT_SEED_OFFSET)
+                   help='terrain_seed = root_seed + idx, object_seed = root_seed + %d + idx '
+                        '(idx = start_index + position).' % OBJECT_SEED_OFFSET)
     p.add_argument('--start-index', dest='start_index', type=int, default=0,
                    help='First <scene>_NN index; bump when appending more worlds to a scene.')
     p.add_argument('--manifest', type=Path, default=DEFAULT_MANIFEST)
@@ -56,6 +57,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument('--craters', type=int, default=0)
     p.add_argument('--crater-depth', dest='crater_depth', type=float,
                    default=generate_heightmap.DEFAULT_CRATER_DEPTH)
+    p.add_argument('--crater-radius', dest='crater_radius', type=float, nargs=2,
+                   metavar=('MIN', 'MAX'),
+                   default=list(generate_heightmap.CRATER_RADIUS_RANGE),
+                   help='Crater radius range as a fraction of the heightmap side. '
+                        'This is the occlusion-size knob, not --crater-depth.')
     p.add_argument('--size', type=float, nargs=3, metavar=('X', 'Y', 'Z'), default=[20.0, 20.0, 1.0],
                    help='World extents of the heightmap in meters.')
     # Object placement params (forwarded to generate_custom_world.generate_world).
@@ -96,12 +102,16 @@ def main() -> None:
     for i in range(args.count):
         idx = args.start_index + i
         world_id = f"{args.scene}_{idx:02d}"
-        terrain_seed = args.root_seed + i
-        object_seed = args.root_seed + OBJECT_SEED_OFFSET + i
+        # Seeds key off idx, not i, so appending with --start-index yields fresh
+        # terrain instead of silently re-rolling the seeds an earlier run used.
+        # Identical to `+ i` for the default --start-index 0, so worlds already
+        # generated stay reproducible from their original command.
+        terrain_seed = args.root_seed + idx
+        object_seed = args.root_seed + OBJECT_SEED_OFFSET + idx
 
         field = generate_heightmap.generate(
             generate_heightmap.DEFAULT_SIZE, terrain_seed, args.octaves, args.persistence,
-            args.craters, args.crater_depth,
+            args.craters, args.crater_depth, tuple(args.crater_radius),
         )
         hm_path = HEIGHTMAPS_DIR / f"{world_id}_heightmap.png"
         Image.fromarray(np.round(field * 255).astype(np.uint8), mode='L').save(hm_path)
@@ -135,6 +145,7 @@ def main() -> None:
             "terrain_seed": terrain_seed,
             "object_seed": object_seed,
             "craters": args.craters,
+            "crater_radius": list(args.crater_radius),
             "object_count": len(placements),
         }
         print(f"[INFO] [{splits[i]}] {world_id}: heightmap={hm_path.name} world={world_path.name} "
