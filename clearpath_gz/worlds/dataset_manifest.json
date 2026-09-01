@@ -62,43 +62,47 @@
     },
     "moon_06": {
       "scene": "moon",
-      "split": "val",
+      "split": "train",
       "heightmap": "heightmaps/moon_06_heightmap.png",
       "world": "worlds/moon_06.sdf",
       "terrain_seed": 2006,
       "object_seed": 12006,
       "craters": 8,
-      "object_count": 40
+      "object_count": 40,
+      "retired_holdout": true
     },
     "moon_07": {
       "scene": "moon",
-      "split": "val",
+      "split": "train",
       "heightmap": "heightmaps/moon_07_heightmap.png",
       "world": "worlds/moon_07.sdf",
       "terrain_seed": 2007,
       "object_seed": 12007,
       "craters": 8,
-      "object_count": 40
+      "object_count": 40,
+      "retired_holdout": true
     },
     "moon_08": {
       "scene": "moon",
-      "split": "test",
+      "split": "train",
       "heightmap": "heightmaps/moon_08_heightmap.png",
       "world": "worlds/moon_08.sdf",
       "terrain_seed": 2008,
       "object_seed": 12008,
       "craters": 8,
-      "object_count": 40
+      "object_count": 40,
+      "retired_holdout": true
     },
     "moon_09": {
       "scene": "moon",
-      "split": "test",
+      "split": "train",
       "heightmap": "heightmaps/moon_09_heightmap.png",
       "world": "worlds/moon_09.sdf",
       "terrain_seed": 2009,
       "object_seed": 12009,
       "craters": 8,
-      "object_count": 40
+      "object_count": 40,
+      "retired_holdout": true
     },
     "mars_00": {
       "scene": "mars",
@@ -162,43 +166,6569 @@
     },
     "mars_06": {
       "scene": "mars",
-      "split": "val",
+      "split": "train",
       "heightmap": "heightmaps/mars_06_heightmap.png",
       "world": "worlds/mars_06.sdf",
       "terrain_seed": 1006,
       "object_seed": 11006,
       "craters": 0,
-      "object_count": 40
+      "object_count": 40,
+      "retired_holdout": true
     },
     "mars_07": {
       "scene": "mars",
-      "split": "val",
+      "split": "train",
       "heightmap": "heightmaps/mars_07_heightmap.png",
       "world": "worlds/mars_07.sdf",
       "terrain_seed": 1007,
       "object_seed": 11007,
       "craters": 0,
-      "object_count": 40
+      "object_count": 40,
+      "retired_holdout": true
     },
     "mars_08": {
       "scene": "mars",
-      "split": "test",
+      "split": "train",
       "heightmap": "heightmaps/mars_08_heightmap.png",
       "world": "worlds/mars_08.sdf",
       "terrain_seed": 1008,
       "object_seed": 11008,
       "craters": 0,
-      "object_count": 40
+      "object_count": 40,
+      "retired_holdout": true
     },
     "mars_09": {
       "scene": "mars",
-      "split": "test",
+      "split": "train",
       "heightmap": "heightmaps/mars_09_heightmap.png",
       "world": "worlds/mars_09.sdf",
       "terrain_seed": 1009,
       "object_seed": 11009,
       "craters": 0,
+      "object_count": 40,
+      "retired_holdout": true
+    },
+    "mars_10": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_10_heightmap.png",
+      "world": "worlds/mars_10.sdf",
+      "terrain_seed": 1010,
+      "object_seed": 11010,
+      "craters": 0,
       "object_count": 40
+    },
+    "mars_11": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_11_heightmap.png",
+      "world": "worlds/mars_11.sdf",
+      "terrain_seed": 1011,
+      "object_seed": 11011,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_12": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_12_heightmap.png",
+      "world": "worlds/mars_12.sdf",
+      "terrain_seed": 1012,
+      "object_seed": 11012,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_13": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_13_heightmap.png",
+      "world": "worlds/mars_13.sdf",
+      "terrain_seed": 1013,
+      "object_seed": 11013,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_14": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_14_heightmap.png",
+      "world": "worlds/mars_14.sdf",
+      "terrain_seed": 1014,
+      "object_seed": 11014,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_15": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_15_heightmap.png",
+      "world": "worlds/mars_15.sdf",
+      "terrain_seed": 1015,
+      "object_seed": 11015,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_16": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_16_heightmap.png",
+      "world": "worlds/mars_16.sdf",
+      "terrain_seed": 1016,
+      "object_seed": 11016,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_17": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_17_heightmap.png",
+      "world": "worlds/mars_17.sdf",
+      "terrain_seed": 1017,
+      "object_seed": 11017,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_18": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_18_heightmap.png",
+      "world": "worlds/mars_18.sdf",
+      "terrain_seed": 1018,
+      "object_seed": 11018,
+      "craters": 0,
+      "object_count": 40
+    },
+    "mars_19": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_19_heightmap.png",
+      "world": "worlds/mars_19.sdf",
+      "terrain_seed": 1019,
+      "object_seed": 11019,
+      "craters": 0,
+      "object_count": 40
+    },
+    "moon_10": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_10_heightmap.png",
+      "world": "worlds/moon_10.sdf",
+      "terrain_seed": 2010,
+      "object_seed": 12010,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_11": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_11_heightmap.png",
+      "world": "worlds/moon_11.sdf",
+      "terrain_seed": 2011,
+      "object_seed": 12011,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_12": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_12_heightmap.png",
+      "world": "worlds/moon_12.sdf",
+      "terrain_seed": 2012,
+      "object_seed": 12012,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_13": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_13_heightmap.png",
+      "world": "worlds/moon_13.sdf",
+      "terrain_seed": 2013,
+      "object_seed": 12013,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_14": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_14_heightmap.png",
+      "world": "worlds/moon_14.sdf",
+      "terrain_seed": 2014,
+      "object_seed": 12014,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_15": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_15_heightmap.png",
+      "world": "worlds/moon_15.sdf",
+      "terrain_seed": 2015,
+      "object_seed": 12015,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_16": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_16_heightmap.png",
+      "world": "worlds/moon_16.sdf",
+      "terrain_seed": 2016,
+      "object_seed": 12016,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_17": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_17_heightmap.png",
+      "world": "worlds/moon_17.sdf",
+      "terrain_seed": 2017,
+      "object_seed": 12017,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_18": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_18_heightmap.png",
+      "world": "worlds/moon_18.sdf",
+      "terrain_seed": 2018,
+      "object_seed": 12018,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_19": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_19_heightmap.png",
+      "world": "worlds/moon_19.sdf",
+      "terrain_seed": 2019,
+      "object_seed": 12019,
+      "craters": 8,
+      "object_count": 40
+    },
+    "moon_20": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_20_heightmap.png",
+      "world": "worlds/moon_20.sdf",
+      "terrain_seed": 2020,
+      "object_seed": 12020,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_21": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_21_heightmap.png",
+      "world": "worlds/moon_21.sdf",
+      "terrain_seed": 2021,
+      "object_seed": 12021,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_22": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_22_heightmap.png",
+      "world": "worlds/moon_22.sdf",
+      "terrain_seed": 2022,
+      "object_seed": 12022,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_23": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_23_heightmap.png",
+      "world": "worlds/moon_23.sdf",
+      "terrain_seed": 2023,
+      "object_seed": 12023,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_24": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_24_heightmap.png",
+      "world": "worlds/moon_24.sdf",
+      "terrain_seed": 2024,
+      "object_seed": 12024,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_25": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_25_heightmap.png",
+      "world": "worlds/moon_25.sdf",
+      "terrain_seed": 2025,
+      "object_seed": 12025,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_26": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_26_heightmap.png",
+      "world": "worlds/moon_26.sdf",
+      "terrain_seed": 2026,
+      "object_seed": 12026,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_27": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_27_heightmap.png",
+      "world": "worlds/moon_27.sdf",
+      "terrain_seed": 2027,
+      "object_seed": 12027,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_28": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_28_heightmap.png",
+      "world": "worlds/moon_28.sdf",
+      "terrain_seed": 2028,
+      "object_seed": 12028,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_29": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_29_heightmap.png",
+      "world": "worlds/moon_29.sdf",
+      "terrain_seed": 2029,
+      "object_seed": 12029,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40
+    },
+    "moon_30": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_30_heightmap.png",
+      "world": "worlds/moon_30.sdf",
+      "terrain_seed": 2030,
+      "object_seed": 12030,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40,
+      "retired_holdout": true
+    },
+    "moon_31": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_31_heightmap.png",
+      "world": "worlds/moon_31.sdf",
+      "terrain_seed": 2031,
+      "object_seed": 12031,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40,
+      "retired_holdout": true
+    },
+    "moon_32": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_32_heightmap.png",
+      "world": "worlds/moon_32.sdf",
+      "terrain_seed": 2032,
+      "object_seed": 12032,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40,
+      "retired_holdout": true
+    },
+    "moon_33": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_33_heightmap.png",
+      "world": "worlds/moon_33.sdf",
+      "terrain_seed": 2033,
+      "object_seed": 12033,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40,
+      "retired_holdout": true
+    },
+    "moon_34": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_34_heightmap.png",
+      "world": "worlds/moon_34.sdf",
+      "terrain_seed": 2034,
+      "object_seed": 12034,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40,
+      "retired_holdout": true
+    },
+    "moon_35": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_35_heightmap.png",
+      "world": "worlds/moon_35.sdf",
+      "terrain_seed": 2035,
+      "object_seed": 12035,
+      "craters": 8,
+      "crater_radius": [
+        0.06,
+        0.12
+      ],
+      "object_count": 40,
+      "retired_holdout": true
+    },
+    "mars_20": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_20_heightmap.png",
+      "world": "worlds/mars_20.sdf",
+      "terrain_seed": 1020,
+      "object_seed": 11020,
+      "param_seed": 21020,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.082117678911228,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "mars_21": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_21_heightmap.png",
+      "world": "worlds/mars_21.sdf",
+      "terrain_seed": 1021,
+      "object_seed": 11021,
+      "param_seed": 21021,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9542367886827294,
+      "object_count_requested": 44,
+      "object_count": 44
+    },
+    "mars_22": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_22_heightmap.png",
+      "world": "worlds/mars_22.sdf",
+      "terrain_seed": 1022,
+      "object_seed": 11022,
+      "param_seed": 21022,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6312799594813856,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "mars_23": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_23_heightmap.png",
+      "world": "worlds/mars_23.sdf",
+      "terrain_seed": 1023,
+      "object_seed": 11023,
+      "param_seed": 21023,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.811068561236302,
+      "object_count_requested": 30,
+      "object_count": 30
+    },
+    "mars_24": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_24_heightmap.png",
+      "world": "worlds/mars_24.sdf",
+      "terrain_seed": 1024,
+      "object_seed": 11024,
+      "param_seed": 21024,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8213422403684678,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "mars_25": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_25_heightmap.png",
+      "world": "worlds/mars_25.sdf",
+      "terrain_seed": 1025,
+      "object_seed": 11025,
+      "param_seed": 21025,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9383437548016313,
+      "object_count_requested": 51,
+      "object_count": 51
+    },
+    "mars_26": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_26_heightmap.png",
+      "world": "worlds/mars_26.sdf",
+      "terrain_seed": 1026,
+      "object_seed": 11026,
+      "param_seed": 21026,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2345901168121927,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "mars_27": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_27_heightmap.png",
+      "world": "worlds/mars_27.sdf",
+      "terrain_seed": 1027,
+      "object_seed": 11027,
+      "param_seed": 21027,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8166798762520453,
+      "object_count_requested": 47,
+      "object_count": 47
+    },
+    "mars_28": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_28_heightmap.png",
+      "world": "worlds/mars_28.sdf",
+      "terrain_seed": 1028,
+      "object_seed": 11028,
+      "param_seed": 21028,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.901826533791549,
+      "object_count_requested": 40,
+      "object_count": 40
+    },
+    "mars_29": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_29_heightmap.png",
+      "world": "worlds/mars_29.sdf",
+      "terrain_seed": 1029,
+      "object_seed": 11029,
+      "param_seed": 21029,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8459926792211645,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "mars_30": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_30_heightmap.png",
+      "world": "worlds/mars_30.sdf",
+      "terrain_seed": 1030,
+      "object_seed": 11030,
+      "param_seed": 21030,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6474081036401351,
+      "object_count_requested": 48,
+      "object_count": 48
+    },
+    "mars_31": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_31_heightmap.png",
+      "world": "worlds/mars_31.sdf",
+      "terrain_seed": 1031,
+      "object_seed": 11031,
+      "param_seed": 21031,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0495578824716465,
+      "object_count_requested": 42,
+      "object_count": 42
+    },
+    "mars_32": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_32_heightmap.png",
+      "world": "worlds/mars_32.sdf",
+      "terrain_seed": 1032,
+      "object_seed": 11032,
+      "param_seed": 21032,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3640075545928307,
+      "object_count_requested": 48,
+      "object_count": 48
+    },
+    "mars_33": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_33_heightmap.png",
+      "world": "worlds/mars_33.sdf",
+      "terrain_seed": 1033,
+      "object_seed": 11033,
+      "param_seed": 21033,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.11860352532207,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "mars_34": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_34_heightmap.png",
+      "world": "worlds/mars_34.sdf",
+      "terrain_seed": 1034,
+      "object_seed": 11034,
+      "param_seed": 21034,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3170070979229243,
+      "object_count_requested": 34,
+      "object_count": 34
+    },
+    "mars_35": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_35_heightmap.png",
+      "world": "worlds/mars_35.sdf",
+      "terrain_seed": 1035,
+      "object_seed": 11035,
+      "param_seed": 21035,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.305602226287917,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "mars_36": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_36_heightmap.png",
+      "world": "worlds/mars_36.sdf",
+      "terrain_seed": 1036,
+      "object_seed": 11036,
+      "param_seed": 21036,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7318144789544792,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "mars_37": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_37_heightmap.png",
+      "world": "worlds/mars_37.sdf",
+      "terrain_seed": 1037,
+      "object_seed": 11037,
+      "param_seed": 21037,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.353399288425852,
+      "object_count_requested": 52,
+      "object_count": 52
+    },
+    "mars_38": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_38_heightmap.png",
+      "world": "worlds/mars_38.sdf",
+      "terrain_seed": 1038,
+      "object_seed": 11038,
+      "param_seed": 21038,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9102815705057856,
+      "object_count_requested": 38,
+      "object_count": 38
+    },
+    "mars_39": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_39_heightmap.png",
+      "world": "worlds/mars_39.sdf",
+      "terrain_seed": 1039,
+      "object_seed": 11039,
+      "param_seed": 21039,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.005893209768871,
+      "object_count_requested": 32,
+      "object_count": 32
+    },
+    "mars_40": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_40_heightmap.png",
+      "world": "worlds/mars_40.sdf",
+      "terrain_seed": 1040,
+      "object_seed": 11040,
+      "param_seed": 21040,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.646486897649942,
+      "object_count_requested": 31,
+      "object_count": 31
+    },
+    "mars_41": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_41_heightmap.png",
+      "world": "worlds/mars_41.sdf",
+      "terrain_seed": 1041,
+      "object_seed": 11041,
+      "param_seed": 21041,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.229632831714886,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "mars_42": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_42_heightmap.png",
+      "world": "worlds/mars_42.sdf",
+      "terrain_seed": 1042,
+      "object_seed": 11042,
+      "param_seed": 21042,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8325347252394386,
+      "object_count_requested": 30,
+      "object_count": 30
+    },
+    "mars_43": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_43_heightmap.png",
+      "world": "worlds/mars_43.sdf",
+      "terrain_seed": 1043,
+      "object_seed": 11043,
+      "param_seed": 21043,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.76720919846739,
+      "object_count_requested": 43,
+      "object_count": 43
+    },
+    "mars_44": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_44_heightmap.png",
+      "world": "worlds/mars_44.sdf",
+      "terrain_seed": 1044,
+      "object_seed": 11044,
+      "param_seed": 21044,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6263482795136115,
+      "object_count_requested": 33,
+      "object_count": 33
+    },
+    "mars_45": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_45_heightmap.png",
+      "world": "worlds/mars_45.sdf",
+      "terrain_seed": 1045,
+      "object_seed": 11045,
+      "param_seed": 21045,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6354903876849072,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "mars_46": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_46_heightmap.png",
+      "world": "worlds/mars_46.sdf",
+      "terrain_seed": 1046,
+      "object_seed": 11046,
+      "param_seed": 21046,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.384470158484775,
+      "object_count_requested": 47,
+      "object_count": 47
+    },
+    "mars_47": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_47_heightmap.png",
+      "world": "worlds/mars_47.sdf",
+      "terrain_seed": 1047,
+      "object_seed": 11047,
+      "param_seed": 21047,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7632434527022594,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "mars_48": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_48_heightmap.png",
+      "world": "worlds/mars_48.sdf",
+      "terrain_seed": 1048,
+      "object_seed": 11048,
+      "param_seed": 21048,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7166101347573142,
+      "object_count_requested": 29,
+      "object_count": 29
+    },
+    "mars_49": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_49_heightmap.png",
+      "world": "worlds/mars_49.sdf",
+      "terrain_seed": 1049,
+      "object_seed": 11049,
+      "param_seed": 21049,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.631368843973709,
+      "object_count_requested": 35,
+      "object_count": 35
+    },
+    "mars_50": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_50_heightmap.png",
+      "world": "worlds/mars_50.sdf",
+      "terrain_seed": 1050,
+      "object_seed": 11050,
+      "param_seed": 21050,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.686779067815229,
+      "object_count_requested": 40,
+      "object_count": 40
+    },
+    "mars_51": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_51_heightmap.png",
+      "world": "worlds/mars_51.sdf",
+      "terrain_seed": 1051,
+      "object_seed": 11051,
+      "param_seed": 21051,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3975084693101443,
+      "object_count_requested": 46,
+      "object_count": 46
+    },
+    "mars_52": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_52_heightmap.png",
+      "world": "worlds/mars_52.sdf",
+      "terrain_seed": 1052,
+      "object_seed": 11052,
+      "param_seed": 21052,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2291435932920733,
+      "object_count_requested": 43,
+      "object_count": 43
+    },
+    "mars_53": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_53_heightmap.png",
+      "world": "worlds/mars_53.sdf",
+      "terrain_seed": 1053,
+      "object_seed": 11053,
+      "param_seed": 21053,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6217781329837317,
+      "object_count_requested": 49,
+      "object_count": 49
+    },
+    "mars_54": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_54_heightmap.png",
+      "world": "worlds/mars_54.sdf",
+      "terrain_seed": 1054,
+      "object_seed": 11054,
+      "param_seed": 21054,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1424095173704267,
+      "object_count_requested": 31,
+      "object_count": 31
+    },
+    "mars_55": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_55_heightmap.png",
+      "world": "worlds/mars_55.sdf",
+      "terrain_seed": 1055,
+      "object_seed": 11055,
+      "param_seed": 21055,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7776982128945935,
+      "object_count_requested": 35,
+      "object_count": 35
+    },
+    "mars_56": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_56_heightmap.png",
+      "world": "worlds/mars_56.sdf",
+      "terrain_seed": 1056,
+      "object_seed": 11056,
+      "param_seed": 21056,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.35327172954434,
+      "object_count_requested": 48,
+      "object_count": 48
+    },
+    "mars_57": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_57_heightmap.png",
+      "world": "worlds/mars_57.sdf",
+      "terrain_seed": 1057,
+      "object_seed": 11057,
+      "param_seed": 21057,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1932578196985375,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "mars_58": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_58_heightmap.png",
+      "world": "worlds/mars_58.sdf",
+      "terrain_seed": 1058,
+      "object_seed": 11058,
+      "param_seed": 21058,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.343280085905254,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "mars_59": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_59_heightmap.png",
+      "world": "worlds/mars_59.sdf",
+      "terrain_seed": 1059,
+      "object_seed": 11059,
+      "param_seed": 21059,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.991811038011695,
+      "object_count_requested": 43,
+      "object_count": 43
+    },
+    "mars_60": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_60_heightmap.png",
+      "world": "worlds/mars_60.sdf",
+      "terrain_seed": 1060,
+      "object_seed": 11060,
+      "param_seed": 21060,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3140523839687916,
+      "object_count_requested": 47,
+      "object_count": 47
+    },
+    "mars_61": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_61_heightmap.png",
+      "world": "worlds/mars_61.sdf",
+      "terrain_seed": 1061,
+      "object_seed": 11061,
+      "param_seed": 21061,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0713791483277912,
+      "object_count_requested": 35,
+      "object_count": 35
+    },
+    "mars_62": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_62_heightmap.png",
+      "world": "worlds/mars_62.sdf",
+      "terrain_seed": 1062,
+      "object_seed": 11062,
+      "param_seed": 21062,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9069688863094758,
+      "object_count_requested": 36,
+      "object_count": 36
+    },
+    "mars_63": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_63_heightmap.png",
+      "world": "worlds/mars_63.sdf",
+      "terrain_seed": 1063,
+      "object_seed": 11063,
+      "param_seed": 21063,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.148810792547788,
+      "object_count_requested": 32,
+      "object_count": 32
+    },
+    "mars_64": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_64_heightmap.png",
+      "world": "worlds/mars_64.sdf",
+      "terrain_seed": 1064,
+      "object_seed": 11064,
+      "param_seed": 21064,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.873004150112044,
+      "object_count_requested": 30,
+      "object_count": 30
+    },
+    "mars_65": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_65_heightmap.png",
+      "world": "worlds/mars_65.sdf",
+      "terrain_seed": 1065,
+      "object_seed": 11065,
+      "param_seed": 21065,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.230171056896289,
+      "object_count_requested": 39,
+      "object_count": 39
+    },
+    "mars_66": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_66_heightmap.png",
+      "world": "worlds/mars_66.sdf",
+      "terrain_seed": 1066,
+      "object_seed": 11066,
+      "param_seed": 21066,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3571774014272986,
+      "object_count_requested": 34,
+      "object_count": 34
+    },
+    "mars_67": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_67_heightmap.png",
+      "world": "worlds/mars_67.sdf",
+      "terrain_seed": 1067,
+      "object_seed": 11067,
+      "param_seed": 21067,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3671305573327537,
+      "object_count_requested": 36,
+      "object_count": 36
+    },
+    "mars_68": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_68_heightmap.png",
+      "world": "worlds/mars_68.sdf",
+      "terrain_seed": 1068,
+      "object_seed": 11068,
+      "param_seed": 21068,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3084376438327414,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "mars_69": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_69_heightmap.png",
+      "world": "worlds/mars_69.sdf",
+      "terrain_seed": 1069,
+      "object_seed": 11069,
+      "param_seed": 21069,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.240184499310731,
+      "object_count_requested": 33,
+      "object_count": 33
+    },
+    "mars_70": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_70_heightmap.png",
+      "world": "worlds/mars_70.sdf",
+      "terrain_seed": 1070,
+      "object_seed": 11070,
+      "param_seed": 21070,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1715226848043576,
+      "object_count_requested": 49,
+      "object_count": 49
+    },
+    "mars_71": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_71_heightmap.png",
+      "world": "worlds/mars_71.sdf",
+      "terrain_seed": 1071,
+      "object_seed": 11071,
+      "param_seed": 21071,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1241834390196903,
+      "object_count_requested": 43,
+      "object_count": 43
+    },
+    "mars_72": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_72_heightmap.png",
+      "world": "worlds/mars_72.sdf",
+      "terrain_seed": 1072,
+      "object_seed": 11072,
+      "param_seed": 21072,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6721046876859211,
+      "object_count_requested": 39,
+      "object_count": 39
+    },
+    "mars_73": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_73_heightmap.png",
+      "world": "worlds/mars_73.sdf",
+      "terrain_seed": 1073,
+      "object_seed": 11073,
+      "param_seed": 21073,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.238827746450872,
+      "object_count_requested": 48,
+      "object_count": 48
+    },
+    "mars_74": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_74_heightmap.png",
+      "world": "worlds/mars_74.sdf",
+      "terrain_seed": 1074,
+      "object_seed": 11074,
+      "param_seed": 21074,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.321170268524361,
+      "object_count_requested": 42,
+      "object_count": 42
+    },
+    "mars_75": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_75_heightmap.png",
+      "world": "worlds/mars_75.sdf",
+      "terrain_seed": 1075,
+      "object_seed": 11075,
+      "param_seed": 21075,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0431683004676544,
+      "object_count_requested": 29,
+      "object_count": 29
+    },
+    "mars_76": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_76_heightmap.png",
+      "world": "worlds/mars_76.sdf",
+      "terrain_seed": 1076,
+      "object_seed": 11076,
+      "param_seed": 21076,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8346791420967066,
+      "object_count_requested": 40,
+      "object_count": 40
+    },
+    "mars_77": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_77_heightmap.png",
+      "world": "worlds/mars_77.sdf",
+      "terrain_seed": 1077,
+      "object_seed": 11077,
+      "param_seed": 21077,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.054832067985392,
+      "object_count_requested": 30,
+      "object_count": 30
+    },
+    "mars_78": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_78_heightmap.png",
+      "world": "worlds/mars_78.sdf",
+      "terrain_seed": 1078,
+      "object_seed": 11078,
+      "param_seed": 21078,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.974431960667967,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "mars_79": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_79_heightmap.png",
+      "world": "worlds/mars_79.sdf",
+      "terrain_seed": 1079,
+      "object_seed": 11079,
+      "param_seed": 21079,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9417238132020265,
+      "object_count_requested": 34,
+      "object_count": 34
+    },
+    "mars_80": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_80_heightmap.png",
+      "world": "worlds/mars_80.sdf",
+      "terrain_seed": 1080,
+      "object_seed": 11080,
+      "param_seed": 21080,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9377648774449483,
+      "object_count_requested": 49,
+      "object_count": 49
+    },
+    "mars_81": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_81_heightmap.png",
+      "world": "worlds/mars_81.sdf",
+      "terrain_seed": 1081,
+      "object_seed": 11081,
+      "param_seed": 21081,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2685363980544047,
+      "object_count_requested": 31,
+      "object_count": 31
+    },
+    "mars_82": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_82_heightmap.png",
+      "world": "worlds/mars_82.sdf",
+      "terrain_seed": 1082,
+      "object_seed": 11082,
+      "param_seed": 21082,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6218116164466743,
+      "object_count_requested": 35,
+      "object_count": 35
+    },
+    "mars_83": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_83_heightmap.png",
+      "world": "worlds/mars_83.sdf",
+      "terrain_seed": 1083,
+      "object_seed": 11083,
+      "param_seed": 21083,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.044243899308983,
+      "object_count_requested": 29,
+      "object_count": 29
+    },
+    "mars_84": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_84_heightmap.png",
+      "world": "worlds/mars_84.sdf",
+      "terrain_seed": 1084,
+      "object_seed": 11084,
+      "param_seed": 21084,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1163878334985067,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "mars_85": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_85_heightmap.png",
+      "world": "worlds/mars_85.sdf",
+      "terrain_seed": 1085,
+      "object_seed": 11085,
+      "param_seed": 21085,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.97946744449631,
+      "object_count_requested": 29,
+      "object_count": 29
+    },
+    "mars_86": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_86_heightmap.png",
+      "world": "worlds/mars_86.sdf",
+      "terrain_seed": 1086,
+      "object_seed": 11086,
+      "param_seed": 21086,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9817280598918805,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "mars_87": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_87_heightmap.png",
+      "world": "worlds/mars_87.sdf",
+      "terrain_seed": 1087,
+      "object_seed": 11087,
+      "param_seed": 21087,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3274872610771116,
+      "object_count_requested": 31,
+      "object_count": 31
+    },
+    "mars_88": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_88_heightmap.png",
+      "world": "worlds/mars_88.sdf",
+      "terrain_seed": 1088,
+      "object_seed": 11088,
+      "param_seed": 21088,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0934274535636037,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "mars_89": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_89_heightmap.png",
+      "world": "worlds/mars_89.sdf",
+      "terrain_seed": 1089,
+      "object_seed": 11089,
+      "param_seed": 21089,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6802569373569671,
+      "object_count_requested": 31,
+      "object_count": 31
+    },
+    "mars_90": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_90_heightmap.png",
+      "world": "worlds/mars_90.sdf",
+      "terrain_seed": 1090,
+      "object_seed": 11090,
+      "param_seed": 21090,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0966438448264677,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "mars_91": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_91_heightmap.png",
+      "world": "worlds/mars_91.sdf",
+      "terrain_seed": 1091,
+      "object_seed": 11091,
+      "param_seed": 21091,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8744721434379528,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "mars_92": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_92_heightmap.png",
+      "world": "worlds/mars_92.sdf",
+      "terrain_seed": 1092,
+      "object_seed": 11092,
+      "param_seed": 21092,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.191735988744863,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "mars_93": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_93_heightmap.png",
+      "world": "worlds/mars_93.sdf",
+      "terrain_seed": 1093,
+      "object_seed": 11093,
+      "param_seed": 21093,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7817661540613703,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "mars_94": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_94_heightmap.png",
+      "world": "worlds/mars_94.sdf",
+      "terrain_seed": 1094,
+      "object_seed": 11094,
+      "param_seed": 21094,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0318166648389915,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "mars_95": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_95_heightmap.png",
+      "world": "worlds/mars_95.sdf",
+      "terrain_seed": 1095,
+      "object_seed": 11095,
+      "param_seed": 21095,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2080524351406905,
+      "object_count_requested": 51,
+      "object_count": 51
+    },
+    "mars_96": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_96_heightmap.png",
+      "world": "worlds/mars_96.sdf",
+      "terrain_seed": 1096,
+      "object_seed": 11096,
+      "param_seed": 21096,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1773104738410467,
+      "object_count_requested": 36,
+      "object_count": 36
+    },
+    "mars_97": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_97_heightmap.png",
+      "world": "worlds/mars_97.sdf",
+      "terrain_seed": 1097,
+      "object_seed": 11097,
+      "param_seed": 21097,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0287524146327756,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "mars_98": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_98_heightmap.png",
+      "world": "worlds/mars_98.sdf",
+      "terrain_seed": 1098,
+      "object_seed": 11098,
+      "param_seed": 21098,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.116986192670094,
+      "object_count_requested": 38,
+      "object_count": 38
+    },
+    "mars_99": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_99_heightmap.png",
+      "world": "worlds/mars_99.sdf",
+      "terrain_seed": 1099,
+      "object_seed": 11099,
+      "param_seed": 21099,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0201114174725014,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "moon_36": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_36_heightmap.png",
+      "world": "worlds/moon_36.sdf",
+      "terrain_seed": 2036,
+      "object_seed": 12036,
+      "param_seed": 22036,
+      "craters": 8,
+      "crater_radius": [
+        0.0222526966661345,
+        0.09617145761126411
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2337953266720665,
+      "object_count_requested": 39,
+      "object_count": 39
+    },
+    "moon_37": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_37_heightmap.png",
+      "world": "worlds/moon_37.sdf",
+      "terrain_seed": 2037,
+      "object_seed": 12037,
+      "param_seed": 22037,
+      "craters": 9,
+      "crater_radius": [
+        0.08837273240785244,
+        0.09841968036337213
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6895856931776527,
+      "object_count_requested": 31,
+      "object_count": 31
+    },
+    "moon_38": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_38_heightmap.png",
+      "world": "worlds/moon_38.sdf",
+      "terrain_seed": 2038,
+      "object_seed": 12038,
+      "param_seed": 22038,
+      "craters": 8,
+      "crater_radius": [
+        0.03510814462377675,
+        0.10742413136013498
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1902249237066047,
+      "object_count_requested": 40,
+      "object_count": 40
+    },
+    "moon_39": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_39_heightmap.png",
+      "world": "worlds/moon_39.sdf",
+      "terrain_seed": 2039,
+      "object_seed": 12039,
+      "param_seed": 22039,
+      "craters": 12,
+      "crater_radius": [
+        0.04149404313634722,
+        0.1008005687707597
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6029116433492234,
+      "object_count_requested": 32,
+      "object_count": 32
+    },
+    "moon_40": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_40_heightmap.png",
+      "world": "worlds/moon_40.sdf",
+      "terrain_seed": 2040,
+      "object_seed": 12040,
+      "param_seed": 22040,
+      "craters": 8,
+      "crater_radius": [
+        0.03156296238349302,
+        0.06171896633187263
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7907940634198618,
+      "object_count_requested": 52,
+      "object_count": 52
+    },
+    "moon_41": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_41_heightmap.png",
+      "world": "worlds/moon_41.sdf",
+      "terrain_seed": 2041,
+      "object_seed": 12041,
+      "param_seed": 22041,
+      "craters": 10,
+      "crater_radius": [
+        0.07142758626959345,
+        0.10735857543845265
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3826768340601356,
+      "object_count_requested": 48,
+      "object_count": 48
+    },
+    "moon_42": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_42_heightmap.png",
+      "world": "worlds/moon_42.sdf",
+      "terrain_seed": 2042,
+      "object_seed": 12042,
+      "param_seed": 22042,
+      "craters": 5,
+      "crater_radius": [
+        0.06312130573005857,
+        0.07431447645846105
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.148053199427401,
+      "object_count_requested": 29,
+      "object_count": 29
+    },
+    "moon_43": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_43_heightmap.png",
+      "world": "worlds/moon_43.sdf",
+      "terrain_seed": 2043,
+      "object_seed": 12043,
+      "param_seed": 22043,
+      "craters": 5,
+      "crater_radius": [
+        0.08038699651765321,
+        0.09970337425505892
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9625766848866115,
+      "object_count_requested": 44,
+      "object_count": 44
+    },
+    "moon_44": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_44_heightmap.png",
+      "world": "worlds/moon_44.sdf",
+      "terrain_seed": 2044,
+      "object_seed": 12044,
+      "param_seed": 22044,
+      "craters": 7,
+      "crater_radius": [
+        0.09310281870832468,
+        0.114416411663885
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6084368680479495,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "moon_45": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_45_heightmap.png",
+      "world": "worlds/moon_45.sdf",
+      "terrain_seed": 2045,
+      "object_seed": 12045,
+      "param_seed": 22045,
+      "craters": 8,
+      "crater_radius": [
+        0.07999565029619417,
+        0.1112220918978614
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0630787302444773,
+      "object_count_requested": 42,
+      "object_count": 42
+    },
+    "moon_46": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_46_heightmap.png",
+      "world": "worlds/moon_46.sdf",
+      "terrain_seed": 2046,
+      "object_seed": 12046,
+      "param_seed": 22046,
+      "craters": 8,
+      "crater_radius": [
+        0.02896716427553972,
+        0.07660180732614259
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6478189498600053,
+      "object_count_requested": 29,
+      "object_count": 29
+    },
+    "moon_47": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_47_heightmap.png",
+      "world": "worlds/moon_47.sdf",
+      "terrain_seed": 2047,
+      "object_seed": 12047,
+      "param_seed": 22047,
+      "craters": 6,
+      "crater_radius": [
+        0.051620129272250334,
+        0.06335416305272441
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.841763721315461,
+      "object_count_requested": 42,
+      "object_count": 42
+    },
+    "moon_48": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_48_heightmap.png",
+      "world": "worlds/moon_48.sdf",
+      "terrain_seed": 2048,
+      "object_seed": 12048,
+      "param_seed": 22048,
+      "craters": 9,
+      "crater_radius": [
+        0.04115846217921955,
+        0.05210548051634896
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.215591124292183,
+      "object_count_requested": 41,
+      "object_count": 41
+    },
+    "moon_49": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_49_heightmap.png",
+      "world": "worlds/moon_49.sdf",
+      "terrain_seed": 2049,
+      "object_seed": 12049,
+      "param_seed": 22049,
+      "craters": 10,
+      "crater_radius": [
+        0.1117429388227282,
+        0.11341352055814538
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.347569400233378,
+      "object_count_requested": 46,
+      "object_count": 46
+    },
+    "moon_50": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_50_heightmap.png",
+      "world": "worlds/moon_50.sdf",
+      "terrain_seed": 2050,
+      "object_seed": 12050,
+      "param_seed": 22050,
+      "craters": 12,
+      "crater_radius": [
+        0.06416256199388365,
+        0.09526548706637611
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.295495373406813,
+      "object_count_requested": 44,
+      "object_count": 44
+    },
+    "moon_51": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_51_heightmap.png",
+      "world": "worlds/moon_51.sdf",
+      "terrain_seed": 2051,
+      "object_seed": 12051,
+      "param_seed": 22051,
+      "craters": 5,
+      "crater_radius": [
+        0.041354947768127606,
+        0.11151927657159473
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2572910094365017,
+      "object_count_requested": 42,
+      "object_count": 42
+    },
+    "moon_52": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_52_heightmap.png",
+      "world": "worlds/moon_52.sdf",
+      "terrain_seed": 2052,
+      "object_seed": 12052,
+      "param_seed": 22052,
+      "craters": 6,
+      "crater_radius": [
+        0.021074179548282116,
+        0.11465024018688277
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8779794491803568,
+      "object_count_requested": 36,
+      "object_count": 36
+    },
+    "moon_53": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_53_heightmap.png",
+      "world": "worlds/moon_53.sdf",
+      "terrain_seed": 2053,
+      "object_seed": 12053,
+      "param_seed": 22053,
+      "craters": 8,
+      "crater_radius": [
+        0.024066696816770122,
+        0.0245040484324294
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.153913798457626,
+      "object_count_requested": 34,
+      "object_count": 34
+    },
+    "moon_54": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_54_heightmap.png",
+      "world": "worlds/moon_54.sdf",
+      "terrain_seed": 2054,
+      "object_seed": 12054,
+      "param_seed": 22054,
+      "craters": 4,
+      "crater_radius": [
+        0.07760231901478411,
+        0.0779500180109581
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6620429003725,
+      "object_count_requested": 30,
+      "object_count": 30
+    },
+    "moon_55": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_55_heightmap.png",
+      "world": "worlds/moon_55.sdf",
+      "terrain_seed": 2055,
+      "object_seed": 12055,
+      "param_seed": 22055,
+      "craters": 12,
+      "crater_radius": [
+        0.07515316211025516,
+        0.08665253677604089
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.349973931447019,
+      "object_count_requested": 39,
+      "object_count": 39
+    },
+    "moon_56": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_56_heightmap.png",
+      "world": "worlds/moon_56.sdf",
+      "terrain_seed": 2056,
+      "object_seed": 12056,
+      "param_seed": 22056,
+      "craters": 10,
+      "crater_radius": [
+        0.02309073679824241,
+        0.11489782340518015
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9617283882194394,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "moon_57": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_57_heightmap.png",
+      "world": "worlds/moon_57.sdf",
+      "terrain_seed": 2057,
+      "object_seed": 12057,
+      "param_seed": 22057,
+      "craters": 5,
+      "crater_radius": [
+        0.06471406090715937,
+        0.08201920740867304
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.090953614846819,
+      "object_count_requested": 47,
+      "object_count": 47
+    },
+    "moon_58": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_58_heightmap.png",
+      "world": "worlds/moon_58.sdf",
+      "terrain_seed": 2058,
+      "object_seed": 12058,
+      "param_seed": 22058,
+      "craters": 4,
+      "crater_radius": [
+        0.06864063913652671,
+        0.08891683406814928
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.124781220047565,
+      "object_count_requested": 38,
+      "object_count": 38
+    },
+    "moon_59": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_59_heightmap.png",
+      "world": "worlds/moon_59.sdf",
+      "terrain_seed": 2059,
+      "object_seed": 12059,
+      "param_seed": 22059,
+      "craters": 10,
+      "crater_radius": [
+        0.035689297209233264,
+        0.05004604421239576
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.387205396551579,
+      "object_count_requested": 31,
+      "object_count": 31
+    },
+    "moon_60": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_60_heightmap.png",
+      "world": "worlds/moon_60.sdf",
+      "terrain_seed": 2060,
+      "object_seed": 12060,
+      "param_seed": 22060,
+      "craters": 8,
+      "crater_radius": [
+        0.05615558667068621,
+        0.06879786290882767
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.274878655244976,
+      "object_count_requested": 41,
+      "object_count": 41
+    },
+    "moon_61": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_61_heightmap.png",
+      "world": "worlds/moon_61.sdf",
+      "terrain_seed": 2061,
+      "object_seed": 12061,
+      "param_seed": 22061,
+      "craters": 4,
+      "crater_radius": [
+        0.10774750537742729,
+        0.11339922390214689
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.896827586492575,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "moon_62": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_62_heightmap.png",
+      "world": "worlds/moon_62.sdf",
+      "terrain_seed": 2062,
+      "object_seed": 12062,
+      "param_seed": 22062,
+      "craters": 4,
+      "crater_radius": [
+        0.06085600950617878,
+        0.09996849639258883
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.3042342178518935,
+      "object_count_requested": 43,
+      "object_count": 43
+    },
+    "moon_63": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_63_heightmap.png",
+      "world": "worlds/moon_63.sdf",
+      "terrain_seed": 2063,
+      "object_seed": 12063,
+      "param_seed": 22063,
+      "craters": 9,
+      "crater_radius": [
+        0.08649317079340572,
+        0.10396162366057063
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6444375848550385,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "moon_64": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_64_heightmap.png",
+      "world": "worlds/moon_64.sdf",
+      "terrain_seed": 2064,
+      "object_seed": 12064,
+      "param_seed": 22064,
+      "craters": 11,
+      "crater_radius": [
+        0.061613751416839196,
+        0.10829440695804869
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.198917011071729,
+      "object_count_requested": 36,
+      "object_count": 36
+    },
+    "moon_65": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_65_heightmap.png",
+      "world": "worlds/moon_65.sdf",
+      "terrain_seed": 2065,
+      "object_seed": 12065,
+      "param_seed": 22065,
+      "craters": 10,
+      "crater_radius": [
+        0.02334876198448366,
+        0.05696345541174837
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.179507851141266,
+      "object_count_requested": 47,
+      "object_count": 47
+    },
+    "moon_66": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_66_heightmap.png",
+      "world": "worlds/moon_66.sdf",
+      "terrain_seed": 2066,
+      "object_seed": 12066,
+      "param_seed": 22066,
+      "craters": 8,
+      "crater_radius": [
+        0.08160682842298135,
+        0.10732380726568891
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.156972386552373,
+      "object_count_requested": 36,
+      "object_count": 36
+    },
+    "moon_67": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_67_heightmap.png",
+      "world": "worlds/moon_67.sdf",
+      "terrain_seed": 2067,
+      "object_seed": 12067,
+      "param_seed": 22067,
+      "craters": 11,
+      "crater_radius": [
+        0.07987841596704259,
+        0.09736304223018691
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.1980623959313283,
+      "object_count_requested": 52,
+      "object_count": 52
+    },
+    "moon_68": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_68_heightmap.png",
+      "world": "worlds/moon_68.sdf",
+      "terrain_seed": 2068,
+      "object_seed": 12068,
+      "param_seed": 22068,
+      "craters": 11,
+      "crater_radius": [
+        0.06461863157658913,
+        0.11644254464018639
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6163498159795626,
+      "object_count_requested": 40,
+      "object_count": 40
+    },
+    "moon_69": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_69_heightmap.png",
+      "world": "worlds/moon_69.sdf",
+      "terrain_seed": 2069,
+      "object_seed": 12069,
+      "param_seed": 22069,
+      "craters": 11,
+      "crater_radius": [
+        0.10646574023455485,
+        0.1076761721335828
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.014297044923823,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "moon_70": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_70_heightmap.png",
+      "world": "worlds/moon_70.sdf",
+      "terrain_seed": 2070,
+      "object_seed": 12070,
+      "param_seed": 22070,
+      "craters": 4,
+      "crater_radius": [
+        0.05712997191792048,
+        0.08901481532298122
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.290443949672276,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "moon_71": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_71_heightmap.png",
+      "world": "worlds/moon_71.sdf",
+      "terrain_seed": 2071,
+      "object_seed": 12071,
+      "param_seed": 22071,
+      "craters": 6,
+      "crater_radius": [
+        0.05887273307261438,
+        0.11143159151474387
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.355201849493021,
+      "object_count_requested": 43,
+      "object_count": 43
+    },
+    "moon_72": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_72_heightmap.png",
+      "world": "worlds/moon_72.sdf",
+      "terrain_seed": 2072,
+      "object_seed": 12072,
+      "param_seed": 22072,
+      "craters": 8,
+      "crater_radius": [
+        0.08340256284928001,
+        0.08864448827978516
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6466594636228686,
+      "object_count_requested": 32,
+      "object_count": 32
+    },
+    "moon_73": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_73_heightmap.png",
+      "world": "worlds/moon_73.sdf",
+      "terrain_seed": 2073,
+      "object_seed": 12073,
+      "param_seed": 22073,
+      "craters": 9,
+      "crater_radius": [
+        0.024252036437784844,
+        0.09794566082432186
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7661633285149931,
+      "object_count_requested": 47,
+      "object_count": 47
+    },
+    "moon_74": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_74_heightmap.png",
+      "world": "worlds/moon_74.sdf",
+      "terrain_seed": 2074,
+      "object_seed": 12074,
+      "param_seed": 22074,
+      "craters": 11,
+      "crater_radius": [
+        0.0816762440216479,
+        0.10884863734159625
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0379872547076174,
+      "object_count_requested": 38,
+      "object_count": 38
+    },
+    "moon_75": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_75_heightmap.png",
+      "world": "worlds/moon_75.sdf",
+      "terrain_seed": 2075,
+      "object_seed": 12075,
+      "param_seed": 22075,
+      "craters": 10,
+      "crater_radius": [
+        0.04830726664033036,
+        0.08116159878033209
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8732293979899484,
+      "object_count_requested": 51,
+      "object_count": 51
+    },
+    "moon_76": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_76_heightmap.png",
+      "world": "worlds/moon_76.sdf",
+      "terrain_seed": 2076,
+      "object_seed": 12076,
+      "param_seed": 22076,
+      "craters": 5,
+      "crater_radius": [
+        0.08057562478680154,
+        0.10223163348797844
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.809595647635907,
+      "object_count_requested": 51,
+      "object_count": 51
+    },
+    "moon_77": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_77_heightmap.png",
+      "world": "worlds/moon_77.sdf",
+      "terrain_seed": 2077,
+      "object_seed": 12077,
+      "param_seed": 22077,
+      "craters": 8,
+      "crater_radius": [
+        0.03552029029826276,
+        0.049863633414578376
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9238826574197414,
+      "object_count_requested": 41,
+      "object_count": 41
+    },
+    "moon_78": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_78_heightmap.png",
+      "world": "worlds/moon_78.sdf",
+      "terrain_seed": 2078,
+      "object_seed": 12078,
+      "param_seed": 22078,
+      "craters": 12,
+      "crater_radius": [
+        0.023564503368808068,
+        0.07842299341133491
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.018145554349183,
+      "object_count_requested": 51,
+      "object_count": 51
+    },
+    "moon_79": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_79_heightmap.png",
+      "world": "worlds/moon_79.sdf",
+      "terrain_seed": 2079,
+      "object_seed": 12079,
+      "param_seed": 22079,
+      "craters": 10,
+      "crater_radius": [
+        0.06772484644863999,
+        0.07785936210360536
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7363243493877365,
+      "object_count_requested": 30,
+      "object_count": 30
+    },
+    "moon_80": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_80_heightmap.png",
+      "world": "worlds/moon_80.sdf",
+      "terrain_seed": 2080,
+      "object_seed": 12080,
+      "param_seed": 22080,
+      "craters": 11,
+      "crater_radius": [
+        0.021885183774141174,
+        0.043619594192551896
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2738597415949853,
+      "object_count_requested": 35,
+      "object_count": 35
+    },
+    "moon_81": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_81_heightmap.png",
+      "world": "worlds/moon_81.sdf",
+      "terrain_seed": 2081,
+      "object_seed": 12081,
+      "param_seed": 22081,
+      "craters": 11,
+      "crater_radius": [
+        0.020163356488523115,
+        0.03611193743111772
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8818922200268435,
+      "object_count_requested": 35,
+      "object_count": 35
+    },
+    "moon_82": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_82_heightmap.png",
+      "world": "worlds/moon_82.sdf",
+      "terrain_seed": 2082,
+      "object_seed": 12082,
+      "param_seed": 22082,
+      "craters": 5,
+      "crater_radius": [
+        0.09531769065559159,
+        0.10980338100028983
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0505973443830867,
+      "object_count_requested": 49,
+      "object_count": 49
+    },
+    "moon_83": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_83_heightmap.png",
+      "world": "worlds/moon_83.sdf",
+      "terrain_seed": 2083,
+      "object_seed": 12083,
+      "param_seed": 22083,
+      "craters": 4,
+      "crater_radius": [
+        0.05888114293374731,
+        0.10530258994100569
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2157292227058254,
+      "object_count_requested": 52,
+      "object_count": 52
+    },
+    "moon_84": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_84_heightmap.png",
+      "world": "worlds/moon_84.sdf",
+      "terrain_seed": 2084,
+      "object_seed": 12084,
+      "param_seed": 22084,
+      "craters": 5,
+      "crater_radius": [
+        0.06555920060321987,
+        0.07728318638353995
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6443262704253114,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "moon_85": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_85_heightmap.png",
+      "world": "worlds/moon_85.sdf",
+      "terrain_seed": 2085,
+      "object_seed": 12085,
+      "param_seed": 22085,
+      "craters": 7,
+      "crater_radius": [
+        0.0328080388181818,
+        0.09261571716890372
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9773579868272648,
+      "object_count_requested": 29,
+      "object_count": 29
+    },
+    "moon_86": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_86_heightmap.png",
+      "world": "worlds/moon_86.sdf",
+      "terrain_seed": 2086,
+      "object_seed": 12086,
+      "param_seed": 22086,
+      "craters": 8,
+      "crater_radius": [
+        0.10741791526363034,
+        0.11467287766106334
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.323870523338441,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "moon_87": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_87_heightmap.png",
+      "world": "worlds/moon_87.sdf",
+      "terrain_seed": 2087,
+      "object_seed": 12087,
+      "param_seed": 22087,
+      "craters": 9,
+      "crater_radius": [
+        0.05817284518716624,
+        0.09463776684223733
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8592567883744642,
+      "object_count_requested": 42,
+      "object_count": 42
+    },
+    "moon_88": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_88_heightmap.png",
+      "world": "worlds/moon_88.sdf",
+      "terrain_seed": 2088,
+      "object_seed": 12088,
+      "param_seed": 22088,
+      "craters": 9,
+      "crater_radius": [
+        0.03388803494012921,
+        0.10586950538187231
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.9098017097140925,
+      "object_count_requested": 47,
+      "object_count": 47
+    },
+    "moon_89": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_89_heightmap.png",
+      "world": "worlds/moon_89.sdf",
+      "terrain_seed": 2089,
+      "object_seed": 12089,
+      "param_seed": 22089,
+      "craters": 7,
+      "crater_radius": [
+        0.07693445330594686,
+        0.0839182716594319
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.267976056446326,
+      "object_count_requested": 46,
+      "object_count": 46
+    },
+    "moon_90": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_90_heightmap.png",
+      "world": "worlds/moon_90.sdf",
+      "terrain_seed": 2090,
+      "object_seed": 12090,
+      "param_seed": 22090,
+      "craters": 5,
+      "crater_radius": [
+        0.05555845288503648,
+        0.0786732479774461
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.740746905945192,
+      "object_count_requested": 28,
+      "object_count": 28
+    },
+    "moon_91": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_91_heightmap.png",
+      "world": "worlds/moon_91.sdf",
+      "terrain_seed": 2091,
+      "object_seed": 12091,
+      "param_seed": 22091,
+      "craters": 8,
+      "crater_radius": [
+        0.05441804404815592,
+        0.11065030704938696
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.793323708308924,
+      "object_count_requested": 32,
+      "object_count": 32
+    },
+    "moon_92": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_92_heightmap.png",
+      "world": "worlds/moon_92.sdf",
+      "terrain_seed": 2092,
+      "object_seed": 12092,
+      "param_seed": 22092,
+      "craters": 9,
+      "crater_radius": [
+        0.0873353204518849,
+        0.09086520889104392
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8719099444789036,
+      "object_count_requested": 41,
+      "object_count": 41
+    },
+    "moon_93": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_93_heightmap.png",
+      "world": "worlds/moon_93.sdf",
+      "terrain_seed": 2093,
+      "object_seed": 12093,
+      "param_seed": 22093,
+      "craters": 8,
+      "crater_radius": [
+        0.09825684193361574,
+        0.10466509941526536
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.2181729976327786,
+      "object_count_requested": 36,
+      "object_count": 36
+    },
+    "moon_94": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_94_heightmap.png",
+      "world": "worlds/moon_94.sdf",
+      "terrain_seed": 2094,
+      "object_seed": 12094,
+      "param_seed": 22094,
+      "craters": 10,
+      "crater_radius": [
+        0.09980327404042415,
+        0.10116602946243003
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.6307509372430171,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "moon_95": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_95_heightmap.png",
+      "world": "worlds/moon_95.sdf",
+      "terrain_seed": 2095,
+      "object_seed": 12095,
+      "param_seed": 22095,
+      "craters": 6,
+      "crater_radius": [
+        0.0577046364197631,
+        0.11863377459516974
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8871299637878076,
+      "object_count_requested": 48,
+      "object_count": 48
+    },
+    "moon_96": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_96_heightmap.png",
+      "world": "worlds/moon_96.sdf",
+      "terrain_seed": 2096,
+      "object_seed": 12096,
+      "param_seed": 22096,
+      "craters": 6,
+      "crater_radius": [
+        0.031065167351797433,
+        0.09523023574615971
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.7579378207675325,
+      "object_count_requested": 44,
+      "object_count": 44
+    },
+    "moon_97": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_97_heightmap.png",
+      "world": "worlds/moon_97.sdf",
+      "terrain_seed": 2097,
+      "object_seed": 12097,
+      "param_seed": 22097,
+      "craters": 12,
+      "crater_radius": [
+        0.02257954029301014,
+        0.06272360509024302
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.302659631393486,
+      "object_count_requested": 45,
+      "object_count": 45
+    },
+    "moon_98": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_98_heightmap.png",
+      "world": "worlds/moon_98.sdf",
+      "terrain_seed": 2098,
+      "object_seed": 12098,
+      "param_seed": 22098,
+      "craters": 9,
+      "crater_radius": [
+        0.02332221159986876,
+        0.09480217243120972
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.8557923071040658,
+      "object_count_requested": 50,
+      "object_count": 50
+    },
+    "moon_99": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_99_heightmap.png",
+      "world": "worlds/moon_99.sdf",
+      "terrain_seed": 2099,
+      "object_seed": 12099,
+      "param_seed": 22099,
+      "craters": 6,
+      "crater_radius": [
+        0.08113754576281199,
+        0.10891325050159231
+      ],
+      "crater_depth": 0.18,
+      "scale": 2.0366202473660358,
+      "object_count_requested": 37,
+      "object_count": 37
+    },
+    "mars_100": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_100_heightmap.png",
+      "world": "worlds/mars_100.sdf",
+      "terrain_seed": 1100,
+      "object_seed": 11100,
+      "param_seed": 21100,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 91,
+      "object_count": 91
+    },
+    "mars_101": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_101_heightmap.png",
+      "world": "worlds/mars_101.sdf",
+      "terrain_seed": 1101,
+      "object_seed": 11101,
+      "param_seed": 21101,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 96,
+      "object_count": 96
+    },
+    "mars_102": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_102_heightmap.png",
+      "world": "worlds/mars_102.sdf",
+      "terrain_seed": 1102,
+      "object_seed": 11102,
+      "param_seed": 21102,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 71,
+      "object_count": 71
+    },
+    "mars_103": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_103_heightmap.png",
+      "world": "worlds/mars_103.sdf",
+      "terrain_seed": 1103,
+      "object_seed": 11103,
+      "param_seed": 21103,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 91,
+      "object_count": 91
+    },
+    "mars_104": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_104_heightmap.png",
+      "world": "worlds/mars_104.sdf",
+      "terrain_seed": 1104,
+      "object_seed": 11104,
+      "param_seed": 21104,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 92,
+      "object_count": 92
+    },
+    "mars_105": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_105_heightmap.png",
+      "world": "worlds/mars_105.sdf",
+      "terrain_seed": 1105,
+      "object_seed": 11105,
+      "param_seed": 21105,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 97,
+      "object_count": 97
+    },
+    "mars_106": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_106_heightmap.png",
+      "world": "worlds/mars_106.sdf",
+      "terrain_seed": 1106,
+      "object_seed": 11106,
+      "param_seed": 21106,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 84,
+      "object_count": 84
+    },
+    "mars_107": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_107_heightmap.png",
+      "world": "worlds/mars_107.sdf",
+      "terrain_seed": 1107,
+      "object_seed": 11107,
+      "param_seed": 21107,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 96,
+      "object_count": 96
+    },
+    "mars_108": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_108_heightmap.png",
+      "world": "worlds/mars_108.sdf",
+      "terrain_seed": 1108,
+      "object_seed": 11108,
+      "param_seed": 21108,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 94,
+      "object_count": 94
+    },
+    "mars_109": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_109_heightmap.png",
+      "world": "worlds/mars_109.sdf",
+      "terrain_seed": 1109,
+      "object_seed": 11109,
+      "param_seed": 21109,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 82,
+      "object_count": 82
+    },
+    "mars_110": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_110_heightmap.png",
+      "world": "worlds/mars_110.sdf",
+      "terrain_seed": 1110,
+      "object_seed": 11110,
+      "param_seed": 21110,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 84,
+      "object_count": 84
+    },
+    "mars_111": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_111_heightmap.png",
+      "world": "worlds/mars_111.sdf",
+      "terrain_seed": 1111,
+      "object_seed": 11111,
+      "param_seed": 21111,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 73,
+      "object_count": 73
+    },
+    "mars_112": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_112_heightmap.png",
+      "world": "worlds/mars_112.sdf",
+      "terrain_seed": 1112,
+      "object_seed": 11112,
+      "param_seed": 21112,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 83,
+      "object_count": 83
+    },
+    "mars_113": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_113_heightmap.png",
+      "world": "worlds/mars_113.sdf",
+      "terrain_seed": 1113,
+      "object_seed": 11113,
+      "param_seed": 21113,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 90,
+      "object_count": 90
+    },
+    "mars_114": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_114_heightmap.png",
+      "world": "worlds/mars_114.sdf",
+      "terrain_seed": 1114,
+      "object_seed": 11114,
+      "param_seed": 21114,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 96,
+      "object_count": 96
+    },
+    "mars_115": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_115_heightmap.png",
+      "world": "worlds/mars_115.sdf",
+      "terrain_seed": 1115,
+      "object_seed": 11115,
+      "param_seed": 21115,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 80,
+      "object_count": 80
+    },
+    "mars_116": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_116_heightmap.png",
+      "world": "worlds/mars_116.sdf",
+      "terrain_seed": 1116,
+      "object_seed": 11116,
+      "param_seed": 21116,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 94,
+      "object_count": 94
+    },
+    "mars_117": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_117_heightmap.png",
+      "world": "worlds/mars_117.sdf",
+      "terrain_seed": 1117,
+      "object_seed": 11117,
+      "param_seed": 21117,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 100,
+      "object_count": 100
+    },
+    "mars_118": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_118_heightmap.png",
+      "world": "worlds/mars_118.sdf",
+      "terrain_seed": 1118,
+      "object_seed": 11118,
+      "param_seed": 21118,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 85,
+      "object_count": 85
+    },
+    "mars_119": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_119_heightmap.png",
+      "world": "worlds/mars_119.sdf",
+      "terrain_seed": 1119,
+      "object_seed": 11119,
+      "param_seed": 21119,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 93,
+      "object_count": 93
+    },
+    "moon_100": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_100_heightmap.png",
+      "world": "worlds/moon_100.sdf",
+      "terrain_seed": 2100,
+      "object_seed": 12100,
+      "param_seed": 22100,
+      "craters": 9,
+      "crater_radius": [
+        0.029226295341698308,
+        0.05698170062058941
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 92,
+      "object_count": 92
+    },
+    "moon_101": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_101_heightmap.png",
+      "world": "worlds/moon_101.sdf",
+      "terrain_seed": 2101,
+      "object_seed": 12101,
+      "param_seed": 22101,
+      "craters": 9,
+      "crater_radius": [
+        0.061319648864417195,
+        0.11202494143117622
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 107,
+      "object_count": 107
+    },
+    "moon_102": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_102_heightmap.png",
+      "world": "worlds/moon_102.sdf",
+      "terrain_seed": 2102,
+      "object_seed": 12102,
+      "param_seed": 22102,
+      "craters": 7,
+      "crater_radius": [
+        0.050135251210634196,
+        0.08375493783430331
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 96,
+      "object_count": 96
+    },
+    "moon_103": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_103_heightmap.png",
+      "world": "worlds/moon_103.sdf",
+      "terrain_seed": 2103,
+      "object_seed": 12103,
+      "param_seed": 22103,
+      "craters": 11,
+      "crater_radius": [
+        0.06626961036205944,
+        0.10336252748080244
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 117,
+      "object_count": 117
+    },
+    "moon_104": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_104_heightmap.png",
+      "world": "worlds/moon_104.sdf",
+      "terrain_seed": 2104,
+      "object_seed": 12104,
+      "param_seed": 22104,
+      "craters": 4,
+      "crater_radius": [
+        0.06806932086214162,
+        0.09206826697606628
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 85,
+      "object_count": 85
+    },
+    "moon_105": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_105_heightmap.png",
+      "world": "worlds/moon_105.sdf",
+      "terrain_seed": 2105,
+      "object_seed": 12105,
+      "param_seed": 22105,
+      "craters": 9,
+      "crater_radius": [
+        0.041760276600863504,
+        0.09591517963927233
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 120,
+      "object_count": 120
+    },
+    "moon_106": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_106_heightmap.png",
+      "world": "worlds/moon_106.sdf",
+      "terrain_seed": 2106,
+      "object_seed": 12106,
+      "param_seed": 22106,
+      "craters": 7,
+      "crater_radius": [
+        0.05096575385176436,
+        0.0566544992916396
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 109,
+      "object_count": 109
+    },
+    "moon_107": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_107_heightmap.png",
+      "world": "worlds/moon_107.sdf",
+      "terrain_seed": 2107,
+      "object_seed": 12107,
+      "param_seed": 22107,
+      "craters": 12,
+      "crater_radius": [
+        0.09758938515669234,
+        0.10499213797432905
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 102,
+      "object_count": 102
+    },
+    "moon_108": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_108_heightmap.png",
+      "world": "worlds/moon_108.sdf",
+      "terrain_seed": 2108,
+      "object_seed": 12108,
+      "param_seed": 22108,
+      "craters": 10,
+      "crater_radius": [
+        0.049977169047918366,
+        0.09205830016444584
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 107,
+      "object_count": 107
+    },
+    "moon_109": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_109_heightmap.png",
+      "world": "worlds/moon_109.sdf",
+      "terrain_seed": 2109,
+      "object_seed": 12109,
+      "param_seed": 22109,
+      "craters": 10,
+      "crater_radius": [
+        0.047135086201579746,
+        0.08269042031925862
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 111,
+      "object_count": 111
+    },
+    "moon_110": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_110_heightmap.png",
+      "world": "worlds/moon_110.sdf",
+      "terrain_seed": 2110,
+      "object_seed": 12110,
+      "param_seed": 22110,
+      "craters": 9,
+      "crater_radius": [
+        0.030269788607695483,
+        0.10177846450384305
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 98,
+      "object_count": 98
+    },
+    "moon_111": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_111_heightmap.png",
+      "world": "worlds/moon_111.sdf",
+      "terrain_seed": 2111,
+      "object_seed": 12111,
+      "param_seed": 22111,
+      "craters": 10,
+      "crater_radius": [
+        0.0840991362125243,
+        0.09847891666916865
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 88,
+      "object_count": 88
+    },
+    "moon_112": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_112_heightmap.png",
+      "world": "worlds/moon_112.sdf",
+      "terrain_seed": 2112,
+      "object_seed": 12112,
+      "param_seed": 22112,
+      "craters": 11,
+      "crater_radius": [
+        0.07545931607307557,
+        0.08924888746392902
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 92,
+      "object_count": 92
+    },
+    "moon_113": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_113_heightmap.png",
+      "world": "worlds/moon_113.sdf",
+      "terrain_seed": 2113,
+      "object_seed": 12113,
+      "param_seed": 22113,
+      "craters": 4,
+      "crater_radius": [
+        0.06294497656192931,
+        0.08280481965072975
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 89,
+      "object_count": 89
+    },
+    "moon_114": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_114_heightmap.png",
+      "world": "worlds/moon_114.sdf",
+      "terrain_seed": 2114,
+      "object_seed": 12114,
+      "param_seed": 22114,
+      "craters": 12,
+      "crater_radius": [
+        0.09370892017902102,
+        0.10799051800462348
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 86,
+      "object_count": 86
+    },
+    "moon_115": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_115_heightmap.png",
+      "world": "worlds/moon_115.sdf",
+      "terrain_seed": 2115,
+      "object_seed": 12115,
+      "param_seed": 22115,
+      "craters": 7,
+      "crater_radius": [
+        0.06739600311255312,
+        0.11067211400201812
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 103,
+      "object_count": 103
+    },
+    "moon_116": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_116_heightmap.png",
+      "world": "worlds/moon_116.sdf",
+      "terrain_seed": 2116,
+      "object_seed": 12116,
+      "param_seed": 22116,
+      "craters": 7,
+      "crater_radius": [
+        0.029053795993109657,
+        0.10317398579353863
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 109,
+      "object_count": 109
+    },
+    "moon_117": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_117_heightmap.png",
+      "world": "worlds/moon_117.sdf",
+      "terrain_seed": 2117,
+      "object_seed": 12117,
+      "param_seed": 22117,
+      "craters": 7,
+      "crater_radius": [
+        0.0776084888761023,
+        0.11380093232712915
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 95,
+      "object_count": 95
+    },
+    "moon_118": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_118_heightmap.png",
+      "world": "worlds/moon_118.sdf",
+      "terrain_seed": 2118,
+      "object_seed": 12118,
+      "param_seed": 22118,
+      "craters": 4,
+      "crater_radius": [
+        0.08317684542431662,
+        0.08666788423172722
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 113,
+      "object_count": 113
+    },
+    "moon_119": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_119_heightmap.png",
+      "world": "worlds/moon_119.sdf",
+      "terrain_seed": 2119,
+      "object_seed": 12119,
+      "param_seed": 22119,
+      "craters": 11,
+      "crater_radius": [
+        0.0739740840387022,
+        0.1123880982836101
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 117,
+      "object_count": 117
+    },
+    "mars_120": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_120_heightmap.png",
+      "world": "worlds/mars_120.sdf",
+      "terrain_seed": 1120,
+      "object_seed": 11120,
+      "param_seed": 21120,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 92,
+      "object_count": 92
+    },
+    "mars_121": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_121_heightmap.png",
+      "world": "worlds/mars_121.sdf",
+      "terrain_seed": 1121,
+      "object_seed": 11121,
+      "param_seed": 21121,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 85,
+      "object_count": 85
+    },
+    "mars_122": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_122_heightmap.png",
+      "world": "worlds/mars_122.sdf",
+      "terrain_seed": 1122,
+      "object_seed": 11122,
+      "param_seed": 21122,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 70,
+      "object_count": 70
+    },
+    "mars_123": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_123_heightmap.png",
+      "world": "worlds/mars_123.sdf",
+      "terrain_seed": 1123,
+      "object_seed": 11123,
+      "param_seed": 21123,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 86,
+      "object_count": 86
+    },
+    "mars_124": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_124_heightmap.png",
+      "world": "worlds/mars_124.sdf",
+      "terrain_seed": 1124,
+      "object_seed": 11124,
+      "param_seed": 21124,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 88,
+      "object_count": 88
+    },
+    "mars_125": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_125_heightmap.png",
+      "world": "worlds/mars_125.sdf",
+      "terrain_seed": 1125,
+      "object_seed": 11125,
+      "param_seed": 21125,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 84,
+      "object_count": 84
+    },
+    "mars_126": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_126_heightmap.png",
+      "world": "worlds/mars_126.sdf",
+      "terrain_seed": 1126,
+      "object_seed": 11126,
+      "param_seed": 21126,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 92,
+      "object_count": 92
+    },
+    "mars_127": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_127_heightmap.png",
+      "world": "worlds/mars_127.sdf",
+      "terrain_seed": 1127,
+      "object_seed": 11127,
+      "param_seed": 21127,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 90,
+      "object_count": 90
+    },
+    "mars_128": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_128_heightmap.png",
+      "world": "worlds/mars_128.sdf",
+      "terrain_seed": 1128,
+      "object_seed": 11128,
+      "param_seed": 21128,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 81,
+      "object_count": 81
+    },
+    "mars_129": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_129_heightmap.png",
+      "world": "worlds/mars_129.sdf",
+      "terrain_seed": 1129,
+      "object_seed": 11129,
+      "param_seed": 21129,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 84,
+      "object_count": 84
+    },
+    "mars_130": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_130_heightmap.png",
+      "world": "worlds/mars_130.sdf",
+      "terrain_seed": 1130,
+      "object_seed": 11130,
+      "param_seed": 21130,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 88,
+      "object_count": 88
+    },
+    "mars_131": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_131_heightmap.png",
+      "world": "worlds/mars_131.sdf",
+      "terrain_seed": 1131,
+      "object_seed": 11131,
+      "param_seed": 21131,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 82,
+      "object_count": 82
+    },
+    "mars_132": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_132_heightmap.png",
+      "world": "worlds/mars_132.sdf",
+      "terrain_seed": 1132,
+      "object_seed": 11132,
+      "param_seed": 21132,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 91,
+      "object_count": 91
+    },
+    "mars_133": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_133_heightmap.png",
+      "world": "worlds/mars_133.sdf",
+      "terrain_seed": 1133,
+      "object_seed": 11133,
+      "param_seed": 21133,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 87,
+      "object_count": 87
+    },
+    "mars_134": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_134_heightmap.png",
+      "world": "worlds/mars_134.sdf",
+      "terrain_seed": 1134,
+      "object_seed": 11134,
+      "param_seed": 21134,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 85,
+      "object_count": 85
+    },
+    "mars_135": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_135_heightmap.png",
+      "world": "worlds/mars_135.sdf",
+      "terrain_seed": 1135,
+      "object_seed": 11135,
+      "param_seed": 21135,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 74,
+      "object_count": 74
+    },
+    "mars_136": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_136_heightmap.png",
+      "world": "worlds/mars_136.sdf",
+      "terrain_seed": 1136,
+      "object_seed": 11136,
+      "param_seed": 21136,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 97,
+      "object_count": 97
+    },
+    "mars_137": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_137_heightmap.png",
+      "world": "worlds/mars_137.sdf",
+      "terrain_seed": 1137,
+      "object_seed": 11137,
+      "param_seed": 21137,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 75,
+      "object_count": 75
+    },
+    "mars_138": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_138_heightmap.png",
+      "world": "worlds/mars_138.sdf",
+      "terrain_seed": 1138,
+      "object_seed": 11138,
+      "param_seed": 21138,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 97,
+      "object_count": 97
+    },
+    "mars_139": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_139_heightmap.png",
+      "world": "worlds/mars_139.sdf",
+      "terrain_seed": 1139,
+      "object_seed": 11139,
+      "param_seed": 21139,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 76,
+      "object_count": 76
+    },
+    "mars_140": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_140_heightmap.png",
+      "world": "worlds/mars_140.sdf",
+      "terrain_seed": 1140,
+      "object_seed": 11140,
+      "param_seed": 21140,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 84,
+      "object_count": 84
+    },
+    "mars_141": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_141_heightmap.png",
+      "world": "worlds/mars_141.sdf",
+      "terrain_seed": 1141,
+      "object_seed": 11141,
+      "param_seed": 21141,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 86,
+      "object_count": 86
+    },
+    "mars_142": {
+      "scene": "mars",
+      "split": "train",
+      "heightmap": "heightmaps/mars_142_heightmap.png",
+      "world": "worlds/mars_142.sdf",
+      "terrain_seed": 1142,
+      "object_seed": 11142,
+      "param_seed": 21142,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 94,
+      "object_count": 94
+    },
+    "mars_143": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_143_heightmap.png",
+      "world": "worlds/mars_143.sdf",
+      "terrain_seed": 1143,
+      "object_seed": 11143,
+      "param_seed": 21143,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 82,
+      "object_count": 82
+    },
+    "mars_144": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_144_heightmap.png",
+      "world": "worlds/mars_144.sdf",
+      "terrain_seed": 1144,
+      "object_seed": 11144,
+      "param_seed": 21144,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 99,
+      "object_count": 99
+    },
+    "mars_145": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_145_heightmap.png",
+      "world": "worlds/mars_145.sdf",
+      "terrain_seed": 1145,
+      "object_seed": 11145,
+      "param_seed": 21145,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 85,
+      "object_count": 85
+    },
+    "mars_146": {
+      "scene": "mars",
+      "split": "val",
+      "heightmap": "heightmaps/mars_146_heightmap.png",
+      "world": "worlds/mars_146.sdf",
+      "terrain_seed": 1146,
+      "object_seed": 11146,
+      "param_seed": 21146,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 80,
+      "object_count": 80
+    },
+    "mars_147": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_147_heightmap.png",
+      "world": "worlds/mars_147.sdf",
+      "terrain_seed": 1147,
+      "object_seed": 11147,
+      "param_seed": 21147,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 81,
+      "object_count": 81
+    },
+    "mars_148": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_148_heightmap.png",
+      "world": "worlds/mars_148.sdf",
+      "terrain_seed": 1148,
+      "object_seed": 11148,
+      "param_seed": 21148,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 89,
+      "object_count": 89
+    },
+    "mars_149": {
+      "scene": "mars",
+      "split": "test",
+      "heightmap": "heightmaps/mars_149_heightmap.png",
+      "world": "worlds/mars_149.sdf",
+      "terrain_seed": 1149,
+      "object_seed": 11149,
+      "param_seed": 21149,
+      "craters": 0,
+      "crater_radius": [
+        0.02,
+        0.08
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          0.37,
+          1.0,
+          0.7
+        ],
+        [
+          1.0,
+          1.5,
+          0.25
+        ],
+        [
+          1.5,
+          2.0,
+          0.05
+        ]
+      ],
+      "object_count_requested": 80,
+      "object_count": 80
+    },
+    "moon_120": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_120_heightmap.png",
+      "world": "worlds/moon_120.sdf",
+      "terrain_seed": 2120,
+      "object_seed": 12120,
+      "param_seed": 22120,
+      "craters": 11,
+      "crater_radius": [
+        0.054414153569605606,
+        0.11475879831947478
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 108,
+      "object_count": 108
+    },
+    "moon_121": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_121_heightmap.png",
+      "world": "worlds/moon_121.sdf",
+      "terrain_seed": 2121,
+      "object_seed": 12121,
+      "param_seed": 22121,
+      "craters": 11,
+      "crater_radius": [
+        0.02008750429603056,
+        0.05233481863660738
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 93,
+      "object_count": 93
+    },
+    "moon_122": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_122_heightmap.png",
+      "world": "worlds/moon_122.sdf",
+      "terrain_seed": 2122,
+      "object_seed": 12122,
+      "param_seed": 22122,
+      "craters": 11,
+      "crater_radius": [
+        0.02207689286759852,
+        0.09085659165615988
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 95,
+      "object_count": 95
+    },
+    "moon_123": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_123_heightmap.png",
+      "world": "worlds/moon_123.sdf",
+      "terrain_seed": 2123,
+      "object_seed": 12123,
+      "param_seed": 22123,
+      "craters": 4,
+      "crater_radius": [
+        0.028208781411220477,
+        0.056108227325163254
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 87,
+      "object_count": 87
+    },
+    "moon_124": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_124_heightmap.png",
+      "world": "worlds/moon_124.sdf",
+      "terrain_seed": 2124,
+      "object_seed": 12124,
+      "param_seed": 22124,
+      "craters": 11,
+      "crater_radius": [
+        0.09726163331278148,
+        0.10144122873618402
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 111,
+      "object_count": 111
+    },
+    "moon_125": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_125_heightmap.png",
+      "world": "worlds/moon_125.sdf",
+      "terrain_seed": 2125,
+      "object_seed": 12125,
+      "param_seed": 22125,
+      "craters": 7,
+      "crater_radius": [
+        0.05086972282354864,
+        0.08126067379982578
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 95,
+      "object_count": 95
+    },
+    "moon_126": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_126_heightmap.png",
+      "world": "worlds/moon_126.sdf",
+      "terrain_seed": 2126,
+      "object_seed": 12126,
+      "param_seed": 22126,
+      "craters": 11,
+      "crater_radius": [
+        0.03009356248680865,
+        0.10215074200536405
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 95,
+      "object_count": 95
+    },
+    "moon_127": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_127_heightmap.png",
+      "world": "worlds/moon_127.sdf",
+      "terrain_seed": 2127,
+      "object_seed": 12127,
+      "param_seed": 22127,
+      "craters": 12,
+      "crater_radius": [
+        0.06490980223939431,
+        0.09303630739972872
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 110,
+      "object_count": 110
+    },
+    "moon_128": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_128_heightmap.png",
+      "world": "worlds/moon_128.sdf",
+      "terrain_seed": 2128,
+      "object_seed": 12128,
+      "param_seed": 22128,
+      "craters": 7,
+      "crater_radius": [
+        0.06237415490027984,
+        0.07638446789875777
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 85,
+      "object_count": 85
+    },
+    "moon_129": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_129_heightmap.png",
+      "world": "worlds/moon_129.sdf",
+      "terrain_seed": 2129,
+      "object_seed": 12129,
+      "param_seed": 22129,
+      "craters": 11,
+      "crater_radius": [
+        0.04938093491082267,
+        0.0982236299314625
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 112,
+      "object_count": 112
+    },
+    "moon_130": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_130_heightmap.png",
+      "world": "worlds/moon_130.sdf",
+      "terrain_seed": 2130,
+      "object_seed": 12130,
+      "param_seed": 22130,
+      "craters": 7,
+      "crater_radius": [
+        0.033503457902087835,
+        0.07077137742442234
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 120,
+      "object_count": 120
+    },
+    "moon_131": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_131_heightmap.png",
+      "world": "worlds/moon_131.sdf",
+      "terrain_seed": 2131,
+      "object_seed": 12131,
+      "param_seed": 22131,
+      "craters": 12,
+      "crater_radius": [
+        0.06074419474250255,
+        0.09506532743558971
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 112,
+      "object_count": 112
+    },
+    "moon_132": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_132_heightmap.png",
+      "world": "worlds/moon_132.sdf",
+      "terrain_seed": 2132,
+      "object_seed": 12132,
+      "param_seed": 22132,
+      "craters": 11,
+      "crater_radius": [
+        0.06749973145375174,
+        0.11006564412239914
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 119,
+      "object_count": 119
+    },
+    "moon_133": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_133_heightmap.png",
+      "world": "worlds/moon_133.sdf",
+      "terrain_seed": 2133,
+      "object_seed": 12133,
+      "param_seed": 22133,
+      "craters": 6,
+      "crater_radius": [
+        0.07573074886308054,
+        0.08607097045440786
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 101,
+      "object_count": 101
+    },
+    "moon_134": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_134_heightmap.png",
+      "world": "worlds/moon_134.sdf",
+      "terrain_seed": 2134,
+      "object_seed": 12134,
+      "param_seed": 22134,
+      "craters": 11,
+      "crater_radius": [
+        0.08426349487097075,
+        0.08903157435609692
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 111,
+      "object_count": 111
+    },
+    "moon_135": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_135_heightmap.png",
+      "world": "worlds/moon_135.sdf",
+      "terrain_seed": 2135,
+      "object_seed": 12135,
+      "param_seed": 22135,
+      "craters": 11,
+      "crater_radius": [
+        0.0758001147698445,
+        0.09146197973945606
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 102,
+      "object_count": 102
+    },
+    "moon_136": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_136_heightmap.png",
+      "world": "worlds/moon_136.sdf",
+      "terrain_seed": 2136,
+      "object_seed": 12136,
+      "param_seed": 22136,
+      "craters": 4,
+      "crater_radius": [
+        0.04644014849832572,
+        0.11647451404724346
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 104,
+      "object_count": 104
+    },
+    "moon_137": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_137_heightmap.png",
+      "world": "worlds/moon_137.sdf",
+      "terrain_seed": 2137,
+      "object_seed": 12137,
+      "param_seed": 22137,
+      "craters": 10,
+      "crater_radius": [
+        0.05512353190144012,
+        0.10307497032462626
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 93,
+      "object_count": 93
+    },
+    "moon_138": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_138_heightmap.png",
+      "world": "worlds/moon_138.sdf",
+      "terrain_seed": 2138,
+      "object_seed": 12138,
+      "param_seed": 22138,
+      "craters": 7,
+      "crater_radius": [
+        0.07725104574155285,
+        0.0907795079535627
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 85,
+      "object_count": 85
+    },
+    "moon_139": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_139_heightmap.png",
+      "world": "worlds/moon_139.sdf",
+      "terrain_seed": 2139,
+      "object_seed": 12139,
+      "param_seed": 22139,
+      "craters": 12,
+      "crater_radius": [
+        0.03239685754039902,
+        0.08888044968039667
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 109,
+      "object_count": 109
+    },
+    "moon_140": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_140_heightmap.png",
+      "world": "worlds/moon_140.sdf",
+      "terrain_seed": 2140,
+      "object_seed": 12140,
+      "param_seed": 22140,
+      "craters": 10,
+      "crater_radius": [
+        0.03159767557996567,
+        0.04663828261019968
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 98,
+      "object_count": 98
+    },
+    "moon_141": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_141_heightmap.png",
+      "world": "worlds/moon_141.sdf",
+      "terrain_seed": 2141,
+      "object_seed": 12141,
+      "param_seed": 22141,
+      "craters": 12,
+      "crater_radius": [
+        0.043444589731467545,
+        0.06634208109389289
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 114,
+      "object_count": 114
+    },
+    "moon_142": {
+      "scene": "moon",
+      "split": "train",
+      "heightmap": "heightmaps/moon_142_heightmap.png",
+      "world": "worlds/moon_142.sdf",
+      "terrain_seed": 2142,
+      "object_seed": 12142,
+      "param_seed": 22142,
+      "craters": 7,
+      "crater_radius": [
+        0.06334145164267486,
+        0.0907485173085524
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 94,
+      "object_count": 94
+    },
+    "moon_143": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_143_heightmap.png",
+      "world": "worlds/moon_143.sdf",
+      "terrain_seed": 2143,
+      "object_seed": 12143,
+      "param_seed": 22143,
+      "craters": 8,
+      "crater_radius": [
+        0.08733952631174362,
+        0.09870176527509021
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 91,
+      "object_count": 91
+    },
+    "moon_144": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_144_heightmap.png",
+      "world": "worlds/moon_144.sdf",
+      "terrain_seed": 2144,
+      "object_seed": 12144,
+      "param_seed": 22144,
+      "craters": 8,
+      "crater_radius": [
+        0.028499138970187115,
+        0.06699170261562748
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 119,
+      "object_count": 119
+    },
+    "moon_145": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_145_heightmap.png",
+      "world": "worlds/moon_145.sdf",
+      "terrain_seed": 2145,
+      "object_seed": 12145,
+      "param_seed": 22145,
+      "craters": 12,
+      "crater_radius": [
+        0.056342214758656,
+        0.11238373246568506
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 109,
+      "object_count": 109
+    },
+    "moon_146": {
+      "scene": "moon",
+      "split": "val",
+      "heightmap": "heightmaps/moon_146_heightmap.png",
+      "world": "worlds/moon_146.sdf",
+      "terrain_seed": 2146,
+      "object_seed": 12146,
+      "param_seed": 22146,
+      "craters": 6,
+      "crater_radius": [
+        0.10021509307174273,
+        0.10830244564169685
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 112,
+      "object_count": 112
+    },
+    "moon_147": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_147_heightmap.png",
+      "world": "worlds/moon_147.sdf",
+      "terrain_seed": 2147,
+      "object_seed": 12147,
+      "param_seed": 22147,
+      "craters": 7,
+      "crater_radius": [
+        0.021672159077970404,
+        0.0675837658060415
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 112,
+      "object_count": 112
+    },
+    "moon_148": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_148_heightmap.png",
+      "world": "worlds/moon_148.sdf",
+      "terrain_seed": 2148,
+      "object_seed": 12148,
+      "param_seed": 22148,
+      "craters": 4,
+      "crater_radius": [
+        0.03146458692241473,
+        0.058497807697731885
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 91,
+      "object_count": 91
+    },
+    "moon_149": {
+      "scene": "moon",
+      "split": "test",
+      "heightmap": "heightmaps/moon_149_heightmap.png",
+      "world": "worlds/moon_149.sdf",
+      "terrain_seed": 2149,
+      "object_seed": 12149,
+      "param_seed": 22149,
+      "craters": 11,
+      "crater_radius": [
+        0.024604938973169316,
+        0.11675382698927306
+      ],
+      "crater_depth": 0.18,
+      "scale": 1.0,
+      "scale_bands": [
+        [
+          1.17,
+          3.16,
+          0.8
+        ],
+        [
+          3.16,
+          4.74,
+          0.17
+        ],
+        [
+          4.74,
+          6.32,
+          0.03
+        ]
+      ],
+      "object_count_requested": 103,
+      "object_count": 103
     }
   }
 }

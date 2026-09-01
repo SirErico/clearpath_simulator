@@ -8,7 +8,7 @@ Sample usage:
 # Rolling hills, no craters:
 python3 scripts/generate_heightmap.py --seed 3 --output heightmaps/heightmap_03.png
 # Cratered moon-like terrain:
-python3 scripts/generate_heightmap.py --seed 5 --craters 10 --crater-depth 0.2 \    
+python3 scripts/generate_heightmap.py --seed 5 --craters 10 --crater-depth 0.2 \
     --output heightmaps/moon_heightmap_05.png
 """
 import argparse

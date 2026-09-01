@@ -224,7 +224,8 @@ def generate_object_block(heightmap: np.ndarray, size, pos, object_count: int, s
                           model_uris=DEFAULT_MODEL_URIS, name_prefix=DEFAULT_NAME_PREFIX,
                           ground_penetration=GROUND_PENETRATION, max_slope=MAX_SLOPE,
                           object_kind="include", scale=1.0, scale_jitter=0.0, embed_frac=0.1,
-                          models_root=DEFAULT_MODELS_ROOT, mesh_rpy=DEFAULT_MESH_RPY):
+                          models_root=DEFAULT_MODELS_ROOT, mesh_rpy=DEFAULT_MESH_RPY,
+                          scale_bands=None):
     """Place objects at random valid points sampled from the heightmap footprint.
 
     object_kind="include" spawns each model as a plain <include> (base-origin
@@ -235,6 +236,19 @@ def generate_object_block(heightmap: np.ndarray, size, pos, object_count: int, s
     Returns (sdf_blocks, placements) where placements records each object's pose.
     """
     rng = np.random.default_rng(seed)
+    if not scale_bands and scale <= 0:
+        raise ValueError("scale must be > 0")
+    if not scale_bands and not 0 <= scale_jitter < 1:
+        raise ValueError("scale_jitter must be in [0, 1) so mesh scales stay positive")
+    if scale_bands:
+        bands = np.asarray(scale_bands, dtype=float)
+        if bands.ndim != 2 or bands.shape[1] != 3:
+            raise ValueError("scale_bands entries must be (MIN, MAX, WEIGHT)")
+        if np.any(bands[:, 0] <= 0) or np.any(bands[:, 1] < bands[:, 0]):
+            raise ValueError("scale band bounds must satisfy 0 < MIN <= MAX")
+        if np.any(bands[:, 2] <= 0):
+            raise ValueError("scale band weights must be > 0")
+        band_probabilities = bands[:, 2] / bands[:, 2].sum()
     blocks = []
     placements = []
     skipped_spawn = 0
@@ -284,7 +298,11 @@ def generate_object_block(heightmap: np.ndarray, size, pos, object_count: int, s
                   "x": round(float(x), 4), "y": round(float(y), 4), "yaw": round(float(yaw), 4)}
 
         if object_kind == "mesh":
-            s = scale * (1.0 + rng.uniform(-scale_jitter, scale_jitter)) if scale_jitter else scale
+            if scale_bands:
+                band = bands[rng.choice(len(bands), p=band_probabilities)]
+                s = rng.uniform(band[0], band[1])
+            else:
+                s = scale * (1.0 + rng.uniform(-scale_jitter, scale_jitter)) if scale_jitter else scale
             glb, (zmin, zmax) = mesh_cache[model_uri]
             # Embed a fraction of the rock's own (scaled) height so small rocks
             # are not swallowed by a fixed offset. Seat the rest above ground.
@@ -379,7 +397,7 @@ def generate_world(heightmap_path: Path, size, pos, with_objects: bool, object_c
                    model_uris=DEFAULT_MODEL_URIS, name_prefix=DEFAULT_NAME_PREFIX,
                    world_name=DEFAULT_WORLD_NAME, texture_path: Path = SOLID_TEXTURE,
                    scene=DEFAULT_SCENE, object_kind="include", scale=1.0, scale_jitter=0.0,
-                   embed_frac=0.1, texture_size=None):
+                   embed_frac=0.1, texture_size=None, scale_bands=None):
     """Build the SDF string. Returns (sdf, placements)."""
     preset = SCENE_PRESETS[scene]
     if texture_size is None:
@@ -391,7 +409,7 @@ def generate_world(heightmap_path: Path, size, pos, with_objects: bool, object_c
             heightmap, size, pos, object_count, seed=seed,
             model_uris=model_uris, name_prefix=name_prefix,
             object_kind=object_kind, scale=scale, scale_jitter=scale_jitter,
-            embed_frac=embed_frac)
+            embed_frac=embed_frac, scale_bands=scale_bands)
     else:
         object_block, placements = "    <!-- objects disabled -->", []
 
@@ -496,6 +514,10 @@ def parse_args():
                    help='Uniform mesh scale for --object-kind mesh (e.g. 0.5 = half size).')
     p.add_argument('--scale-jitter', type=float, default=0.0,
                    help='Random +/- fraction on scale per object (e.g. 0.3 -> x0.7..x1.3).')
+    p.add_argument('--scale-band', dest='scale_bands', type=float, nargs=3,
+                   action='append', metavar=('MIN', 'MAX', 'WEIGHT'),
+                   help='Per-rock scale interval and relative probability; repeat for a '
+                        'small-rock-biased mixture. Overrides --scale/--scale-jitter.')
     p.add_argument('--embed-frac', type=float, default=0.1,
                    help='Fraction of each mesh object height buried below the surface.')
     p.add_argument('--no-positions-file', action='store_true',
@@ -535,6 +557,7 @@ def main():
                                      object_kind=args.object_kind,
                                      scale=args.scale,
                                      scale_jitter=args.scale_jitter,
+                                     scale_bands=args.scale_bands,
                                      embed_frac=args.embed_frac,
                                      texture_size=args.texture_size)
 
